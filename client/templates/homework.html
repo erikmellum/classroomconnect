@@ -1,0 +1,22 @@
+---
+name: homework
+url: /homework
+animationIn: slideInRight
+animationOut: slideOutLeft
+controller: HomeworkCtrl
+---
+<div class="container">
+  <p>Homework</p>
+  <button  ui-sref="home" class="button alert">Test</button>
+  <ul>
+
+    <li ng-repeat="assignment in assignments">
+      <h1>{{assignment.title}}</h1>
+
+
+
+      <div s>, {{assignment.dueDate}}</h1>
+      <p>{{assignment.contents}}</p>
+    </li>
+  </ul>
+</div>

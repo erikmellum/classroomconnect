@@ -1,47 +1,62 @@
 @import "settings";
 @import "foundation";
-@import url(http://fonts.googleapis.com/css?family=Dosis|Life+Savers|Smythe|Waiting+for+the+Sunrise|Pontano+Sans);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Pathway+Gothic+One|Over+the+Rainbow|Amatic+SC|Old+Standard+TT);
 
-.mainMenu{
-	background: #fff;
-	border-right: 1px solid $gray-light;
-	padding-top: 1rem;
-}
 .side-nav li a{
-  color: $primary-color;
-  font-size: 25px;
+  font-family: 'Amatic SC', cursive;
+  background: #004876;
+  opacity: .75;
+  color: #FFFFFF;
+  font-size: 30px;
 }
-.topHeader{
-  font-size: 40px;
+.side-nav li a:hover{
+  background: #004876;
+  opacity: .98;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+.side-nav li a:active{
+  opacity: .98;
 }
 .topBar{
-  border: none;
-  background: none;
+  font-size: 50px;
+  background: #004876;
+  heigth: 200px;
+  opacity: .75;
 }
-
+.topHeader{
+  color:#FFFFFF;
+}
 #login{
   top: 50px;
 }
 .weeklyNote{
   padding: .2rem;
 }
-.grid-content{
-  padding: 0 1rem;
-}
 body{
 	background-image: url("../../img/classroomBackground.jpg");
 }
+.assignmentsButton{
+  background: #CC7A29;
+  opacity: .75;
+  font-family: 'Shadows Into Light', cursive;
+}
+.assignmentsButton:hover{
+  opacity: .98;
+}
+
 .homeworkCard{
 	height: 300px;
 	overflow: auto;
-	opacity: .85;
+	opacity: .75;
 	margin: .5rem .5rem;
 	transition-property: opacity;
 	transition-duration: .5s;
 	transition-timing: ease-out;
 }
 .assignmentContent p{
-  font-family: 'Dosis', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-size: 14px;
 }
 
 .homeworkCard:hover{
@@ -82,7 +97,12 @@ body{
 .notesDownload{
   float: right;
 }
-.grid-content h3{
+.pageHeader h4{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
   text-align: center;
-  color: #E58F78
+  color: #000066
+}
+.grid-content{
+  padding: 0 1rem;
 }

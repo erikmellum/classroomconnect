@@ -5,26 +5,29 @@ animationIn: fadeIn
 animationOut: slideOutLeft
 controller: HomeworkCtrl
 ---
-
-<div class="grid-container" style="margin: 1rem;">
-    <h4>You are looking at {{subjects.join(", ")}}</h4>
-
+<div class="grid-container pageHeader" style="margin: 1rem;">
+  <zf-offcanvas id="menu" position="bottom">
+  <p>This is the assignments page; here you will find (extremely helpful) information about all upcoming assignments. You can search for assignments by name, or you can filter assignments by subject.  Some assignments may also have a download icon in the upper right corner. This means there is additional content that you will need in order to complete the assignment. You may download the additional content by clicking on the download icon. As always, please do not hesitate to contact me if you have any questions.</p>
+  </zf-offcanvas>
+    <a zf-toggle="menu" class="button assignmentsButton" position="center">Click to learn more about the assignments page.</a>    
+    <p>Assignments({{subjects.join(", ")}})</p>
   <div class="grid-block wrap">
     <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments" ng-if="containsSubject(assignment)">
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
-          <h4><b>{{assignment.title}}</b></h4>
+          <h3>{{assignment.title}}</h3>
           <a ng-show="assignment.location" class="download homeworkDownloadButton" href="{{assignment.location}}"><i class="fa fa-download"></i></a>
-          <h4><b>{{assignment.dueDate}}</b></h4>
+          <h3>{{assignment.dueDate}}</h3>
           <p>{{assignment.contents}}</p>
-          <a zf-open="homeworkModal{{$index}}" class="button homeworkDescriptionButton"><b>Details</b></a>
+          <a zf-toggle="homeworkModal{{$index}}" class="button homeworkDescriptionButton"><b>Details</b></a>
+
           <div class="grid-content homeworkLabels">
           <span class="label homeworkLabel success"  ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)">{{subject}}</span>
           </div>
         </div>
       </div>
       <div zf-modal="" id="homeworkModal{{$index}}">
-        <a zf-close="" class="close-button">×</a>
+        <a zf-toggle="" class="close-button">×</a>
         <h3>Back in my days...</h3>
         <p>{{assignment.contents}}</p>
       </div>

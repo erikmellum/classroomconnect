@@ -86,19 +86,19 @@
 // $headers: "h1,h2,h3,h4,h5,h6";
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
+$font-weight-normal: normal;
 // $font-weight-bold: bold;
 
 // We use these to control various global styles
 // $body-background: #fff;
 // $body-font-color: #006600;
-$body-font-family: 'Waiting for the Sunrise', cursive;
+$body-font-family: 'Amatic SC', cursive;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 // $body-antialiased: true;
 
 // Application Colors
-$primary-color: #004876;
+$primary-color: #000066;
 $secondary-color: #000066;
 // $alert-color: #F04124;
 // $info-color: #A0D3E8;
@@ -173,7 +173,7 @@ $secondary-color: #000066;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
+$paragraph-font-family: 'Shadows Into Light', cursive;
 // $paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
 // $paragraph-line-height: 1.6;
@@ -262,7 +262,7 @@ $secondary-color: #000066;
 
 // $accordion-border: 1px solid $gray-dark;
 
-// $accordion-title-background: $gray-light;
+$accordion-title-background: #004876;
 // $accordion-title-background-hover: smartscale($accordion-title-background, 5%);
 // $accordion-title-background-active: smartscale($accordion-title-background, 3%);
 // $accordion-title-color: isitlight($accordion-title-background);
@@ -533,7 +533,7 @@ $card-background: #004876;
 
 // $offcanvas-background: #fff;
 // $offcanvas-color: isitlight($offcanvas-background);
-// $offcanvas-padding: 0;
+$offcanvas-padding: 35px;
 // $offcanvas-shadow: 3px 0 10px rgba(black, 0.25);
 // $offcanvas-animation-speed: 0.25s;
 

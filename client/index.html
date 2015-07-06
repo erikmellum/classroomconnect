@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classroom Connect</title>
     <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="/assets/js/foundation.js"></script>
     <script src="/assets/js/templates.js"></script>
     <script src="/assets/js/routes.js"></script>
@@ -13,80 +12,77 @@
   </head>
   <body>
     <div class="grid-frame vertical">
-      <div class="menu-group primary">
-        <div class="menu-group-left">
-          <ul class="menu-bar primary">
-            <li><a><strong>Mrs Mellum's Classroom</strong></a></li>
-            <li><a ui-sref="homework"><strong>Homework</strong></a></li>
-            <li><a ui-sref="quizzes"><strong>Quizzes</strong></a></li>
-            <li><a ui-sref="calendar"><strong>Calendar</strong></a></li>
-            <li><a ui-sref="notes"><strong>Notes</strong></a></li>
-            <li><a ui-sref="news"><strong>News</strong></a></li>
-          </ul>
-        </div>
-        <div class="menu-group-right">
-          <ul class="icon-left primary menu-bar">
-            <li><a href="#" zf-toggle="subjects">Subject</a></li>
-            <li><a href="#" zf-toggle="login">Login</a></li>
-          </ul>
-        </div>
+      <div class="title-bar">
+        <div class="center title"><a ui-sref="home">Mrs. Mellum's Classroom</a></div>
+        <span class="left"><a class="hide-for-medium" zf-toggle="sub-nav">Menu</a></span>
+        <span class="right"><a zf-toggle="login"><img zf-iconic="" icon="cog" size="small"></a></span>
       </div>
-
-      <div ui-view class="grid-cblock ui-animation vertical">
+      <div class="grid-block">
+        <div zf-panel id="sub-nav" position="left" class="medium-3 large-2 medium-grid-block vertical mainMenu" zf-swipe-close="left">
+          <div class="grid-content shrink">
+            <section class="block-list side-nav">
+              <ul>
+                <li><a ui-sref="homework"><strong>Homework</strong></a></li>
+                <li><a ui-sref="quizzes"><strong>Quizzes</strong></a></li>
+                <li><a ui-sref="calendar"><strong>Calendar</strong></a></li>
+                <li><a ui-sref="notes"><strong>Notes</strong></a></li>
+                <li><a ui-sref="news"><strong>News</strong></a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="grid-content">
+            <h4>Weekly Note</h4>
+            <blockquote class="weeklyNote"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</q></blockquote>
+          </div>
+        </div>
+        <div class="small-12 medium-9 large-10 grid-block">
+          <div ui-view class="ui-animation vertical grid-block">
+          </div>
+        </div>
       </div>
     </div>
     <div zf-panel="" id="subjects" position="right" class="subjects">
-      <a zf-close="" class="button">Close Panel</a>
       <div class="grid-content">
-          <section class="block-list">
-            <header>Subjects</header>
-            <ul>
-            <li>
-            <input type="checkbox" id="history" value="history" checked="">
-            <label for="history">History</label>
-            </li>
-            <li>
-            <input type="checkbox" id="science" value="science">
-            <label for="science">Science</label>
-            </li>
-            <li>
-            <input type="checkbox" id="english" value="english">
-            <label for="english">English</label>
-            </li>
-            <li>
-            <input type="checkbox" id="math" value="math">
-            <label for="math">Math</label>
-            </li>
-            </ul>
-          </section>
+
       </div>
     </div>
-    <div zf-panel="" id="login" position="right" class="login">
-      <a zf-close="" class="button">Close Panel</a>
+    <div zf-panel="" id="login" position="right" class="login" zf-swipe-close="right">
       <div class="grid-content">
         <section class="block-list">
-          <header>Login</header>
+          <header>Login to Classroom Connect!</header>
           <ul>
             <li><input type="text" value="cady@africa.com"></li>
             <li><input type="password" value="password1234"></li>
           </ul>
-        </section>
 
+        </section>
+        <a class="button expand success hollow" zf-close>Login</a>
+        <!--
+        <a class="button expand warning hollow" zf-close>Signup</a>
+        <a class="button expand alert hollow" zf-close>Logout</a>
+        -->
         <section class="block-list">
-          <header>Account Settings</header>
+          <header>Subjects</header>
           <ul>
-            <li>
-              <span>Option One</span>
-              <div class="switch"><input type="checkbox" id="setting1"><label for="setting1"></label></div>
-            </li>
-            <li>
-              <span>Option Two</span>
-              <div class="switch"><input type="checkbox" id="setting1"><label for="setting1"></label></div>
-            </li>
+          <li>
+          <input type="checkbox" id="history" value="history" checked="">
+          <label for="history">History</label>
+          </li>
+          <li>
+          <input type="checkbox" id="science" value="science">
+          <label for="science">Science</label>
+          </li>
+          <li>
+          <input type="checkbox" id="english" value="english">
+          <label for="english">English</label>
+          </li>
+          <li>
+          <input type="checkbox" id="math" value="math">
+          <label for="math">Math</label>
+          </li>
           </ul>
         </section>
-        <a class="button expand success" zf-close>Save</a>
-        <a class="button expand warning" zf-close>Cancel</a>
+        <a class="button expand " zf-close>Close</a>
       </div>
     </div>
   </body>

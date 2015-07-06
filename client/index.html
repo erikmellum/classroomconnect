@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Apps</title>
+    <title>Classroom Connect</title>
     <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
     <script src="/assets/js/foundation.js"></script>
     <script src="/assets/js/templates.js"></script>
@@ -12,13 +12,80 @@
   </head>
   <body>
     <div class="grid-frame vertical">
-      <div class="grid-content shrink" style="padding: 0;">
-        <ul class="primary condense menu-bar">
-          <li><a><strong>Foundation for Apps</strong></a></li>
-          <li><a ui-sref="homework"><strong>Homework</strong></a></li>
-        </ul>
+      <div class="menu-group primary">
+        <div class="menu-group-left">
+          <ul class="menu-bar primary">
+            <li><a><strong>Mrs Mellum's Classroom</strong></a></li>
+            <li><a ui-sref="homework"><strong>Homework</strong></a></li>
+            <li><a ui-sref="quizzes"><strong>Quizzes</strong></a></li>
+            <li><a ui-sref="calendar"><strong>Calendar</strong></a></li>
+            <li><a ui-sref="notes"><strong>Notes</strong></a></li>
+            <li><a ui-sref="news"><strong>News</strong></a></li>
+          </ul>
+        </div>
+        <div class="menu-group-right">
+          <ul class="icon-left primary menu-bar">
+            <li><a href="#" zf-toggle="subjects">Subject</a></li>
+            <li><a href="#" zf-toggle="login">Login</a></li>
+          </ul>
+        </div>
       </div>
-      <div ui-view class="grid-content">
+
+      <div ui-view>
+      </div>
+    </div>
+    <div zf-panel="" id="subjects" position="right" class="subjects">
+      <a zf-close="" class="button">Close Panel</a>
+      <div class="grid-content">
+          <section class="block-list">
+            <header>Subjects</header>
+            <ul>
+            <li>
+            <input type="checkbox" id="history" value="history" checked="">
+            <label for="history">History</label>
+            </li>
+            <li>
+            <input type="checkbox" id="science" value="science">
+            <label for="science">Science</label>
+            </li>
+            <li>
+            <input type="checkbox" id="english" value="english">
+            <label for="english">English</label>
+            </li>
+            <li>
+            <input type="checkbox" id="math" value="math">
+            <label for="math">Math</label>
+            </li>
+            </ul>
+          </section>
+      </div>
+    </div>
+    <div zf-panel="" id="login" position="right" class="login">
+      <a zf-close="" class="button">Close Panel</a>
+      <div class="grid-content">
+        <section class="block-list">
+          <header>Login</header>
+          <ul>
+            <li><input type="text" value="cady@africa.com"></li>
+            <li><input type="password" value="password1234"></li>
+          </ul>
+        </section>
+
+        <section class="block-list">
+          <header>Account Settings</header>
+          <ul>
+            <li>
+              <span>Option One</span>
+              <div class="switch"><input type="checkbox" id="setting1"><label for="setting1"></label></div>
+            </li>
+            <li>
+              <span>Option Two</span>
+              <div class="switch"><input type="checkbox" id="setting1"><label for="setting1"></label></div>
+            </li>
+          </ul>
+        </section>
+        <a class="button expand success" zf-close>Save</a>
+        <a class="button expand warning" zf-close>Cancel</a>
       </div>
     </div>
   </body>

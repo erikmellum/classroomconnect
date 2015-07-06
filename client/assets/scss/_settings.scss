@@ -479,7 +479,7 @@
 // $motion-spin-and-fade: true;
 
 // Default speed for transitions and animations
-// $motion-duration-default: 500ms;
+ $motion-duration-default: 300ms;
 // Slow and fast modifiders
 // $motion-duration-slow: 750ms;
 // $motion-duration-fast: 250ms;
@@ -488,7 +488,7 @@
 // $motion-stagger-duration-long: 300ms;
 
 // Default timing function for transitions and animations
-// $motion-timing-default: ease;
+ $motion-timing-default: easeInOut;
 // Built-in and custom easing functions
 // Every item in this map becomes a CSS class
 // $motion-timings: (

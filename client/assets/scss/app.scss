@@ -1,8 +1,25 @@
 @import "settings";
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Combo|Wire+One|Covered+By+Your+Grace);
+.mainMenu{
+	background: #fff;
+	border-right: 1px solid $gray-light;
+	padding-top: 1rem;
+}
+.side-nav li a{
+  color: $primary-color;
+}
+#login{
+  top: 50px;
+}
+.weeklyNote{
+  padding: .2rem;
+}
+.grid-content{
+  padding: 0 1rem;
+}
 body{
-	background-image: url("../../img/classroomBackground.jpg");	
+	background-image: url("../../img/classroomBackground.jpg");
 }
 .homeworkCard{
   color: #000;

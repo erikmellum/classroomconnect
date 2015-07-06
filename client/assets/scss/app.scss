@@ -14,7 +14,20 @@
 .weeklyNote{
   padding: .2rem;
 }
-
 .grid-content{
   padding: 0 1rem;
+}
+body{
+	background-image: url("../../img/classroomBackground.jpg");
+}
+.homeworkCard{
+	opacity: .5;
+	margin: .5rem .5rem;
+	transition-property: opacity;
+	transition-duration: .5s;
+	transition-timing: ease-out;
+}
+
+.homeworkCard:hover{
+	opacity: .9;
 }

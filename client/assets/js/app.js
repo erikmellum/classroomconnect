@@ -27,15 +27,57 @@
     $locationProvider.hashPrefix('!');
   }
 
-  function run() {
+  function run($rootScope) {
+    $rootScope.subjects=['math', 'english', 'history', 'science'];
     FastClick.attach(document.body);
   }
+
   classroomConnect.controller('HomeworkCtrl', ['$scope', function($scope){
+    $scope.setSubject=function(subject){
+      $scope.subjects=[];
+      $scope.subjects.push(subject)
+    }
+    $scope.containsSubject=function(assignment){
+      var intersect=$scope.subjects.filter(function(n) {
+        return assignment.subjects.indexOf(n) != -1
+      });
+      if(intersect.length > 0) return true
+      return false;
+    }
     $scope.assignments=[
-      {title: 'Homework #1', dueDate: '05/31/15', contents: 'Prepare to learn.', location: 'homework/homework.pdf'},
-      {title: 'Homework #2', dueDate: '06/31/15', contents: 'Prepare to learn more.'},
-      {title: 'Homework #3', dueDate: '07/31/15', contents: 'Prepare to learn less.'},
-      {title: 'Homework #4', dueDate: '08/31/15', contents: 'Prepare to learn the usual.'}
+      {
+        title: 'Assignment #1', 
+        dueDate: '05/31/15', 
+        contents: 'the quick brown fox jumps over the lazy dog. this is a sentence that uses every letter of the alphabet.', 
+        location: 'homework/homework.pdf',
+        subjects: [
+            'history',
+            'english'
+          ]
+      },
+      {
+        title: 'Assignment #2', 
+        dueDate: '06/31/15', 
+        contents: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        subjects: [
+            'english'
+          ]
+      },
+      {title: 'Assignment #3', 
+      dueDate: '07/31/15', 
+      contents: 'the quick brown fox jumps over the lazy dog.',
+        subjects: [
+            'science'
+          ]
+    },
+      {title: 'Assignment #4', 
+      dueDate: '08/31/15', 
+      contents: 'Prepare to learn the usual.',
+        subjects: [
+            'math',
+            'science'
+          ]
+    }
     ];
   }]);
 })();

@@ -1,5 +1,5 @@
 ---
-name: homework
+name: assignments
 url: /homework
 animationIn: fadeIn
 animationOut: slideOutLeft
@@ -7,25 +7,23 @@ controller: HomeworkCtrl
 ---
   <div class="grid-block wrap">
     
-    <div class="grid-block small-12 medium-6 large-4 " ng-repeat="assignment in assignments">
+    <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments" ng-if="containsSubject(assignment)">
       <div class="card homeworkCard">
         <div class="card-section ">
           <h4>{{assignment.title}}</h4>
-          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 150%;" class="fa fa-download"></i></a>
+          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i class="fa fa-download homeworkDownloadIcon"></i></a>
           <p>{{assignment.dueDate}}</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a zf-open="basicModal" class="button">Open modal</a>
-          <div zf-modal="" id="basicModal">
-          <a zf-close="" class="close-button">×</a>
-          <h3>Back in my days...</h3>
-          <p>There were 3 Star Wars movies and Disney only made cartoons.</p>
+          <p>{{assignment.contents}}</p>
+          <a zf-open="homeworkModal{{$index}}" class="button">Open modal</a>
+          <div class="grid-content homeworkLabels">
+          <span class="label homeworkLabel"  ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)">{{subject}}</span>
           </div>
         </div>
+      </div>
+      <div zf-modal="" id="homeworkModal{{$index}}">
+        <a zf-close="" class="close-button">×</a>
+        <h3>Back in my days...</h3>
+        <p>{{assignment.contents}}</p>
       </div>
     </div>
   </div>

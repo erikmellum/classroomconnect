@@ -5,20 +5,27 @@ animationIn: fadeIn
 animationOut: slideOutLeft
 controller: HomeworkCtrl
 ---
-<div class="grid-content">
-<div class="grid-container">
-  <h4>Homework</h4>
-    <ul>
-      <li ng-repeat="assignment in assignments">
-        <div class="grid-block">
-          <h1>{{assignment.title}}</h1>
-
-
-
-          <h1>, {{assignment.dueDate}}</h1>
-          <p>{{assignment.contents}}</p>
+  <div class="grid-block wrap">
+    
+    <div class="grid-block small-12 medium-6 large-4 " ng-repeat="assignment in assignments">
+      <div class="card">
+        <div class="card-section">
+          <h4>{{assignment.title}}</h4>
+          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 150%;" class="fa fa-download"></i></a>
+          <p>{{assignment.dueDate}}</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a zf-open="basicModal" class="button">Open modal</a>
+          <div zf-modal="" id="basicModal">
+          <a zf-close="" class="close-button">×</a>
+          <h3>Back in my days...</h3>
+          <p>There were 3 Star Wars movies and Disney only made cartoons.</p>
+          </div>
         </div>
-      </li>
-    </ul>
-</div>
-</div>
+      </div>
+    </div>
+  </div>

@@ -32,8 +32,10 @@
   }
   classroomConnect.controller('HomeworkCtrl', ['$scope', function($scope){
     $scope.assignments=[
-      {title: 'Homework #1', dueDate: '05/31/15', contents: 'Prepare to learn.'},
-      {title: 'Homework #2', dueDate: '06/31/15', contents: 'Prepare to learn more.'}
+      {title: 'Homework #1', dueDate: '05/31/15', contents: 'Prepare to learn.', location: 'homework/homework.pdf'},
+      {title: 'Homework #2', dueDate: '06/31/15', contents: 'Prepare to learn more.'},
+      {title: 'Homework #3', dueDate: '07/31/15', contents: 'Prepare to learn less.'},
+      {title: 'Homework #4', dueDate: '08/31/15', contents: 'Prepare to learn the usual.'}
     ];
   }]);
 })();

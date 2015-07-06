@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Classroom Connect</title>
     <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="/assets/js/foundation.js"></script>
     <script src="/assets/js/templates.js"></script>
     <script src="/assets/js/routes.js"></script>
@@ -12,8 +13,8 @@
   </head>
   <body>
     <div class="grid-frame vertical">
-      <div class="title-bar">
-        <div class="center title"><a ui-sref="home">Mrs. Mellum's Classroom</a></div>
+      <div class="title-bar topBar">
+        <div class="center title"><a ui-sref="home" class="topHeader">Mrs. Mellum's Classroom</a></div>
         <span class="left"><a class="hide-for-medium" zf-toggle="sub-nav">Menu</a></span>
         <span class="right"><a zf-toggle="login"><img zf-iconic="" icon="cog" size="small"></a></span>
       </div>
@@ -22,10 +23,10 @@
           <div class="grid-content shrink">
             <section class="block-list side-nav">
               <ul>
-                <li><a ui-sref="homework"><strong>Homework</strong></a></li>
+                <li><a ui-sref="assignments"><strong>Assignments</strong></a></li>
                 <li><a ui-sref="quizzes"><strong>Quizzes</strong></a></li>
                 <li><a ui-sref="calendar"><strong>Calendar</strong></a></li>
-                <li><a ui-sref="notes"><strong>Notes</strong></a></li>
+                <li><a ui-sref="notes"><strong>Notes & Downloads</strong></a></li>
                 <li><a ui-sref="news"><strong>News</strong></a></li>
               </ul>
             </section>
@@ -56,7 +57,7 @@
           </ul>
 
         </section>
-        <a class="button expand success hollow" zf-close>Login</a>
+        <a class="button expand success" zf-close>Login</a>
         <!--
         <a class="button expand warning hollow" zf-close>Signup</a>
         <a class="button expand alert hollow" zf-close>Logout</a>

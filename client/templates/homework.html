@@ -5,18 +5,21 @@ animationIn: fadeIn
 animationOut: slideOutLeft
 controller: HomeworkCtrl
 ---
+
+<div class="grid-container" style="margin: 1rem;">
+    <h4>You are looking at {{subjects.join(", ")}}</h4>
+
   <div class="grid-block wrap">
-    
     <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments" ng-if="containsSubject(assignment)">
       <div class="card homeworkCard">
-        <div class="card-section ">
-          <h4>{{assignment.title}}</h4>
-          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i class="fa fa-download homeworkDownloadIcon"></i></a>
-          <p>{{assignment.dueDate}}</p>
+        <div class="card-section assignmentContent">
+          <h4><b>{{assignment.title}}</b></h4>
+          <a ng-show="assignment.location" class="download homeworkDownloadButton" href="{{assignment.location}}"><i class="fa fa-download"></i></a>
+          <h4><b>{{assignment.dueDate}}</b></h4>
           <p>{{assignment.contents}}</p>
-          <a zf-open="homeworkModal{{$index}}" class="button">Open modal</a>
+          <a zf-open="homeworkModal{{$index}}" class="button homeworkDescriptionButton"><b>Details</b></a>
           <div class="grid-content homeworkLabels">
-          <span class="label homeworkLabel"  ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)">{{subject}}</span>
+          <span class="label homeworkLabel success"  ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)">{{subject}}</span>
           </div>
         </div>
       </div>
@@ -26,4 +29,5 @@ controller: HomeworkCtrl
         <p>{{assignment.contents}}</p>
       </div>
     </div>
+  </div>
   </div>

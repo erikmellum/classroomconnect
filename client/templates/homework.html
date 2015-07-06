@@ -8,8 +8,8 @@ controller: HomeworkCtrl
   <div class="grid-block wrap">
     
     <div class="grid-block small-12 medium-6 large-4 " ng-repeat="assignment in assignments">
-      <div class="card">
-        <div class="card-section">
+      <div class="card homeworkCard">
+        <div class="card-section ">
           <h4>{{assignment.title}}</h4>
           <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 150%;" class="fa fa-download"></i></a>
           <p>{{assignment.dueDate}}</p>

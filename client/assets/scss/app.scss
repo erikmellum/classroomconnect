@@ -19,16 +19,14 @@
   opacity: .98;
 }
 .topBar{
-  font-size: 50px;
+  font-size: 30px;
   background: #004876;
-  heigth: 200px;
   opacity: .75;
 }
 .topHeader{
   color:#FFFFFF;
 }
 #login{
-  top: 50px;
 }
 .weeklyNote{
   padding: .2rem;
@@ -47,6 +45,7 @@ body{
 
 .homeworkCard{
 	height: 300px;
+  width: 100%;
 	overflow: auto;
 	opacity: .75;
 	margin: .5rem .5rem;
@@ -66,6 +65,8 @@ font-size: 14px;
 	padding: 0;
 }
 .homeworkLabel{
+  padding: .5rem 1rem;
+  font-size: 120%;
 	cursor: pointer;
 	margin-right: .5rem;
 	transition-property: opacity;
@@ -92,17 +93,94 @@ font-size: 14px;
   background: #995C1F;
 }
 .noteContent{
-	background: $gray;
+  font-family: 'Shadows Into Light', cursive;
 }
 .notesDownload{
   float: right;
 }
-.pageHeader h4{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
-  text-align: center;
-  color: #000066
-}
 .grid-content{
   padding: 0 1rem;
 }
+.actionSheetContainer{
+  background: #004876
+}
+.menuIcon{
+  color: #004876;
+}
+.menuIcon:hover{
+  color: #CC7A29;
+}
+.assignmentsInfoIcon{
+  top: 1.5rem;
+  right: 6.5rem;
+  position: absolute;
+  color: #004876;
+  opacity: .75;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.assignmentsInfoIcon:hover{
+  color: #CC7A29;
+}
+.assignmentSearchIcon{
+  float: right;
+  margin-top: .5rem; 
+  color: #004876;
+  opacity: .75;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.assignmentSearchIcon:hover{
+  color: #CC7A29;
+}
+.notesTab{
+  font-family: 'Shadows Into Light', cursive;
+  background: #B4B4B4;
+}
+.accordion-title{
+  background: #004876;
+  opacity: .75;
+  color: #FFF;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 150%;
+}
+.titleAccordion{
+  display: none;
+}
+.notesAccordion{
+  background: #FFF;
+  opacity: .75;
+}
+.handoutsAccordion{
+  background: #FFF;
+  opacity: .75;
+}
+.resourcesAccordion{
+  background: #FFF;
+  opacity: .75;
+}
+.reminderBox h4{
+  font-size: 30px;
+}
+.reminder{
+  width: 200px;
+  font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+}
+.canvasExitButton{
+  font-size: 70px;
+}
+#assignmentInfoPopup{
+  background: #004876;
+  opacity: .85;
+  color: #FFFFFF;
+}
+#assignmentInfoPopup p{
+  font-size: 30px; 
+  text-align: center;
+}
+
+

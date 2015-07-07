@@ -262,9 +262,9 @@ $paragraph-font-family: 'Shadows Into Light', cursive;
 
 // $accordion-border: 1px solid $gray-dark;
 
-$accordion-title-background: #004876;
-// $accordion-title-background-hover: smartscale($accordion-title-background, 5%);
-// $accordion-title-background-active: smartscale($accordion-title-background, 3%);
+ $accordion-title-background: #004876;
+ $accordion-title-background-hover: smartscale($accordion-title-background, 0%);
+ $accordion-title-background-active: smartscale($accordion-title-background, 0%);
 // $accordion-title-color: isitlight($accordion-title-background);
 // $accordion-title-color-active: isitlight($accordion-title-background);
 
@@ -274,14 +274,14 @@ $accordion-title-background: #004876;
 // 8. Action Sheet
 // - - - - - - - - - - - - - - -
 
-// $actionsheet-background: white;
+$actionsheet-background: #004876;
 // $actionsheet-border-color: #ccc;
 // $actionsheet-animate: transform opacity;
 // $actionsheet-animation-speed: 0.25s;
-// $actionsheet-width: 300px;
+$actionsheet-width: 200px;
 // $actionsheet-radius: 4px;
 // $actionsheet-shadow: 0 -3px 10px rgba(black, 0.25);
-// $actionsheet-padding: $global-padding;
+//$actionsheet-padding: 25px;
 // $actionsheet-tail-size: 10px;
 
 // $actionsheet-popup-shadow: 0 0 10px rgba(black, 0.25);
@@ -528,13 +528,13 @@ $card-background: #004876;
 // 20. Off-canvas
 // - - - - - - - - - - - - - - -
 
-// $offcanvas-size-horizontal: 250px;
-// $offcanvas-size-vertical: 250px;
+// $offcanvas-size-horizontal: 150px;
+$offcanvas-size-vertical: 400px;
 
-// $offcanvas-background: #fff;
+$offcanvas-background: #004876;
 // $offcanvas-color: isitlight($offcanvas-background);
 $offcanvas-padding: 35px;
-// $offcanvas-shadow: 3px 0 10px rgba(black, 0.25);
+$offcanvas-shadow: 10px 0 10px rgba(black, 0.25);
 // $offcanvas-animation-speed: 0.25s;
 
 // $offcanvas-frame-selector: '.grid-frame';
@@ -583,6 +583,7 @@ $offcanvas-padding: 35px;
 // $tab-title-background-active: smartscale($tab-title-background, 3%);
 // $tab-title-color: isitlight($tab-title-background);
 // $tab-title-color-active: $tab-title-color;
+
 
 // $tab-title-padding: $global-padding;
 // $tab-content-padding: $global-padding;

@@ -13,6 +13,11 @@
     .config(config)
     .run(run)
   ;
+  classroomConnect.filter('iif', function () {
+   return function(input, trueValue, falseValue) {
+        return input ? trueValue : falseValue;
+   };
+  });
 
   config.$inject = ['$urlRouterProvider', '$locationProvider'];
 
@@ -29,6 +34,7 @@
 
   function run($rootScope) {
     $rootScope.subjects=['math', 'English', 'history', 'science'];
+    $rootScope.test="and";
     FastClick.attach(document.body);
   }
 

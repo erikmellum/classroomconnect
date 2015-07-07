@@ -92,12 +92,7 @@ font-size: 14px;
 .homeworkDescriptionButton:hover{
   background: #995C1F;
 }
-.noteContent{
-  font-family: 'Shadows Into Light', cursive;
-}
-.notesDownload{
-  float: right;
-}
+
 .grid-content{
   padding: 0 1rem;
 }
@@ -135,10 +130,6 @@ font-size: 14px;
 .assignmentSearchIcon:hover{
   color: #CC7A29;
 }
-.notesTab{
-  font-family: 'Shadows Into Light', cursive;
-  background: #B4B4B4;
-}
 .accordion-title{
   background: #004876;
   opacity: .75;
@@ -149,10 +140,6 @@ font-size: 14px;
 }
 .titleAccordion{
   display: none;
-}
-.notesAccordion{
-  background: #FFF;
-  opacity: .75;
 }
 .handoutsAccordion{
   background: #FFF;
@@ -181,6 +168,19 @@ font-size: 14px;
 #assignmentInfoPopup p{
   font-size: 30px; 
   text-align: center;
+}
+.notesHeader{
+  font-size: 20px;
+  color: #FFFFFF;
+  opacity: .7;
+  border: solid;
+}
+.notesHeader:hover{
+  opacity: .98;
+}
+.notesAccordian{
+  width: 500px;
+  margin: 0px auto;
 }
 
 

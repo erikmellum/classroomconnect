@@ -260,7 +260,7 @@ $paragraph-font-family: 'Shadows Into Light', cursive;
 // 7. Accordion
 // - - - - - - - - - - - - - - -
 
-// $accordion-border: 1px solid $gray-dark;
+$accordion-border: none;
 
  $accordion-title-background: #004876;
  $accordion-title-background-hover: smartscale($accordion-title-background, 0%);
@@ -578,7 +578,7 @@ $offcanvas-shadow: 10px 0 10px rgba(black, 0.25);
 
 // $tabstrip-background: transparent;
 
-// $tab-title-background: $gray-light;
+$tab-title-background: #004876;
 // $tab-title-background-hover: smartscale($tab-title-background, 5%);
 // $tab-title-background-active: smartscale($tab-title-background, 3%);
 // $tab-title-color: isitlight($tab-title-background);

@@ -260,25 +260,22 @@ $paragraph-font-family: 'Shadows Into Light', cursive;
 // 7. Accordion
 // - - - - - - - - - - - - - - -
 
-$accordion-border: none;
-
- $accordion-title-background: #004876;
- $accordion-title-background-hover: smartscale($accordion-title-background, 0%);
- $accordion-title-background-active: smartscale($accordion-title-background, 0%);
-// $accordion-title-color: isitlight($accordion-title-background);
-// $accordion-title-color-active: isitlight($accordion-title-background);
-
+ $accordion-border: none;
+//$accordion-title-background: #004876;
+//$accordion-title-background-hover: smartscale($accordion-title-background, 0%);
+//$accordion-title-background-active: smartscale($accordion-title-background, 0%);
+//$accordion-title-color-active: #CC7A29;
 // $accordion-title-padding: $global-padding;
 // $accordion-content-padding: $global-padding;
 
 // 8. Action Sheet
 // - - - - - - - - - - - - - - -
 
-$actionsheet-background: #004876;
+//$actionsheet-background: #004876;
 // $actionsheet-border-color: #ccc;
 // $actionsheet-animate: transform opacity;
 // $actionsheet-animation-speed: 0.25s;
-$actionsheet-width: 200px;
+//$actionsheet-width: 200px;
 // $actionsheet-radius: 4px;
 // $actionsheet-shadow: 0 -3px 10px rgba(black, 0.25);
 //$actionsheet-padding: 25px;
@@ -576,13 +573,13 @@ $offcanvas-shadow: 10px 0 10px rgba(black, 0.25);
 // 24. Tabs
 // - - - - - - - - - - - - - - -
 
-// $tabstrip-background: transparent;
+//$tabstrip-background: transparent;
 
 $tab-title-background: #004876;
-// $tab-title-background-hover: smartscale($tab-title-background, 5%);
-// $tab-title-background-active: smartscale($tab-title-background, 3%);
-// $tab-title-color: isitlight($tab-title-background);
-// $tab-title-color-active: $tab-title-color;
+//$tab-title-background-hover: smartscale($tab-title-background, 5%);
+//$tab-title-background-active: smartscale($tab-title-background, 3%);
+//$tab-title-color: isitlight($tab-title-background);
+//$tab-title-color-active: $tab-title-color;
 
 
 // $tab-title-padding: $global-padding;

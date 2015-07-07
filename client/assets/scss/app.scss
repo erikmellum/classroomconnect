@@ -130,14 +130,6 @@ font-size: 14px;
 .assignmentSearchIcon:hover{
   color: #CC7A29;
 }
-.accordion-title{
-  background: #004876;
-  opacity: .75;
-  color: #FFF;
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
-  font-size: 150%;
-}
 .titleAccordion{
   display: none;
 }
@@ -170,17 +162,28 @@ font-size: 14px;
   text-align: center;
 }
 .notesHeader{
-  font-size: 20px;
-  color: #FFFFFF;
-  opacity: .7;
   border: solid;
+  opacity: .75;
 }
 .notesHeader:hover{
+  background: #004876;
   opacity: .98;
 }
-.notesAccordian{
-  width: 500px;
-  margin: 0px auto;
+.accordion-title{
+  background: #004876;
+  opacity: .75;
+  color: #FFF;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 150%;
+}
+.accordion-title:hover{
+  background: #004876;
+  opacity: .98;
+}
+.notesContent p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
 }
 
 

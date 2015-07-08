@@ -18,6 +18,39 @@
         return input ? trueValue : falseValue;
    };
   });
+  classroomConnect.controller('NavCtrl', ['$scope', function($scope){
+    $scope.selected = {};
+   $scope.select= function(item) {
+     $scope.selected = item; 
+   };
+
+   $scope.isActive = function(item) {
+
+     return $scope.selected === item;
+   };
+
+    $scope.links=[{
+      content: 'Assignments',
+      href: 'assignments'
+    },
+    {
+      content: 'Quizzes',
+      href: 'quizzes'
+    },
+    {
+      content: 'Calendar',
+      href: 'calendar'
+    },
+    {
+      content: 'Notes & Downloads',
+      href: 'notes'
+    },
+    {
+      content: 'News',
+      href: 'news'
+    }]
+  }]);
+
 
   config.$inject = ['$urlRouterProvider', '$locationProvider'];
 
@@ -32,10 +65,30 @@
     $locationProvider.hashPrefix('!');
   }
 
-  function run($rootScope) {
+  function run($rootScope, $window) {
     $rootScope.subjects=['math', 'English', 'history', 'science'];
     $rootScope.test="and";
     FastClick.attach(document.body);
+    var w = angular.element($window);
+    w.bind('resize', function () {
+      checkWindowSize();
+    });
+    w.bind('load', function () {
+      checkWindowSize();
+    });
+    function checkWindowSize() {
+
+      if ( $window.innerWidth < 640 ) {
+          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'1px'});
+      }
+      else if ( $window.innerWidth < 900 ) {
+          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'8px'});
+      }
+      else {
+          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'15px'});
+      }
+
+    }
   }
 
   classroomConnect.controller('HomeworkCtrl', ['$scope', function($scope){

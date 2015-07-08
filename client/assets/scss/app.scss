@@ -1,30 +1,37 @@
 @import "settings";
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Pathway+Gothic+One|Over+the+Rainbow|Amatic+SC|Old+Standard+TT);
-
+$kmellum-blue: #004876;
 .side-nav li a{
   font-family: 'Amatic SC', cursive;
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .75;
   color: #FFFFFF;
   font-size: 30px;
 }
 .side-nav li a:hover{
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .98;
   color: #FFFFFF;
   font-size: 30px;
 }
 .side-nav li a:active{
+  background: $kmellum-blue;
+  color: #FFFFFF; 
   opacity: .98;
+}
+.sideBarNavItem.is-active{
+    color: #FFFFFF; 
+    opacity: .98;
 }
 .topBar{
   font-size: 30px;
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .75;
 }
 .topHeader{
   color:#FFFFFF;
+  letter-spacing: 15px;
 }
 #login{
 }
@@ -34,11 +41,7 @@
 body{
 	background-image: url("../../img/classroomBackground.jpg");
 }
-.assignmentsButton{
-  background: #CC7A29;
-  opacity: .75;
-  font-family: 'Shadows Into Light', cursive;
-}
+
 .assignmentsButton:hover{
   opacity: .98;
 }
@@ -53,13 +56,24 @@ body{
 	transition-duration: .5s;
 	transition-timing: ease-out;
 }
-.assignmentContent p{
-font-family: 'Shadows Into Light', cursive;
-font-size: 14px;
+.assignmentContent{
+  padding: .75rem;
 }
-
+.assignmentContent p{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 14px;
+  overflow: auto;
+  height: 140px;
+}
+.assignmentContent h3, .assignmentContent h4{
+  margin-top: 0;
+  margin-bottom: rem-calc(3);
+}
 .homeworkCard:hover{
 	opacity: .98;
+}
+.homeworkLabels.grid-content{
+  padding-left: .2rem;
 }
 .homeworkLabels{
 	padding: 0;
@@ -97,20 +111,20 @@ font-size: 14px;
   padding: 0 1rem;
 }
 .actionSheetContainer{
-  background: #004876
+  background: $kmellum-blue
 }
 .menuIcon{
-  color: #004876;
+  color: $kmellum-blue;
 }
 .menuIcon:hover{
   color: #CC7A29;
 }
 .assignmentsInfoIcon{
-  top: 1.5rem;
-  right: 6.5rem;
-  position: absolute;
-  color: #004876;
+  float: right;
+  color: $kmellum-blue;
   opacity: .75;
+  margin-top: .5rem;
+  margin-right: .5rem;
   transition-property: color;
   transition-duration: .5s;
   transition-timing: ease-out;
@@ -121,8 +135,9 @@ font-size: 14px;
 .assignmentSearchIcon{
   float: right;
   margin-top: .5rem; 
-  color: #004876;
+  color: $kmellum-blue;
   opacity: .75;
+  cursor: pointer;
   transition-property: color;
   transition-duration: .5s;
   transition-timing: ease-out;
@@ -153,7 +168,7 @@ font-size: 14px;
   font-size: 70px;
 }
 #assignmentInfoPopup{
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .85;
   color: #FFFFFF;
 }
@@ -166,11 +181,24 @@ font-size: 14px;
   opacity: .75;
 }
 .notesHeader:hover{
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .98;
 }
+
+.tabs .tab-item.is-active {
+      background: $kmellum-blue;
+      color: #FFFFFF;
+      opacity: .98;
+}
+.accordion{
+  border: solid;
+  border-color: #CCCCCC; 
+  border-width: 1px;
+  width: 700px;
+}
 .accordion-title{
-  background: #004876;
+  text-align: center;
+  background: $kmellum-blue;
   opacity: .75;
   color: #FFF;
   font-family: 'Amatic SC', cursive;
@@ -178,12 +206,44 @@ font-size: 14px;
   font-size: 150%;
 }
 .accordion-title:hover{
-  background: #004876;
+  background: $kmellum-blue;
   opacity: .98;
 }
-.notesContent p{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 25px;
+.is-active > .accordion-title{
+    background: $kmellum-blue;
+    color: #FFFFFF; 
+    opacity: .98;
+    }
+.accordion-content{
+  background: #FFFFFF;
+  opacity: .8;
+  padding: 1rem;
+  display: none; 
+  }
+.accordion-content p{
+  font-size: 30px;
 }
-
-
+  .is-active > .accordion-content 
+  {
+    display: block; 
+    }
+.notesInfoIcon{
+  top: 1.5rem;
+  right: 6.5rem;
+  position: absolute;
+  color: #004876;
+  opacity: .75;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.notesInfoIcon:hover{
+  color: #CC7A29;
+}
+.notesInfoPopup{
+  font-size: 50px;
+}
+.activeLink{
+  background: #00548a;
+  opacity: .98;
+}

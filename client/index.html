@@ -22,18 +22,18 @@
         <div zf-panel id="sub-nav" position="left" class="medium-3 large-2 medium-grid-block vertical mainMenu" zf-swipe-close="left">
           <div class="grid-content shrink">
             <section class="block-list side-nav">
-              <ul>
-                <li><a ui-sref="assignments"><strong>Assignments</strong></a></li>
-                <li><a ui-sref="quizzes"><strong>Quizzes</strong></a></li>
-                <li><a ui-sref="calendar"><strong>Calendar</strong></a></li>
-                <li><a ui-sref="notes"><strong>Notes & Downloads</strong></a></li>
-                <li><a ui-sref="news"><strong>News</strong></a></li>
+              <ul ng-controller="NavCtrl">
+                <li ng-repeat="link in links" ng-class="{activeLink: isActive(link)}" class="sideBarNavItem">
+                  <a ng-click="select(link)" ui-sref="{{link.href}}"><strong>{{link.content}}</strong></a>
+                </li>
               </ul>
             </section>
           </div>
           <div class="grid-content reminder">
             <h4>Reminders:</h4>
             <blockquote class="reminder"><q>The first day of school is <b>August 17th.</b> I'm looking foward to meeting you all &#9786;</q></blockquote>
+
+
           </div>
         </div>
         <div class="small-12 medium-9 large-10 grid-block">

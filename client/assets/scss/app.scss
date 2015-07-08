@@ -90,6 +90,17 @@ body{
 .homeworkLabel:hover{
 	opacity: .7;
 }
+.downloadIconH{
+  color: #F08A24;
+  float: left;
+  margin-right: 1.5rem;
+  top: 1.5rem;
+  zoom: 130%;
+}
+.downloadIconH:hover{
+  color: $kmellum-blue;
+  opacity: .98;
+}
 .downloadIconA{
   color: #F08A24;
 	position: absolute; 
@@ -250,6 +261,7 @@ body{
   color: #F08A24;
   float: left;
   padding-right: 1rem;
+  zoom: 150%;
   }
 .downloadIconN:hover{
   color: $kmellum-blue;
@@ -258,3 +270,11 @@ body{
 .activeLink{
   background: #00548a;
 }
+.quizQuestion{
+  display: inline;
+  font-size: 40px;
+}
+.question{
+  display:block;
+}
+

@@ -46,6 +46,10 @@
       href: 'notes'
     },
     {
+      content: 'Forums',
+      href: 'forums'
+    },
+    {
       content: 'News',
       href: 'news'
     }]

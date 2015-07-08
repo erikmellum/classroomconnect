@@ -51,7 +51,7 @@
     },
     {
       content: 'News',
-      href: 'news'
+      href: 'news' 
     }]
   }]);
 

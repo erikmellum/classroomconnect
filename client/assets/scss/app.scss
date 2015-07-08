@@ -2,6 +2,8 @@
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Pathway+Gothic+One|Over+the+Rainbow|Amatic+SC|Old+Standard+TT);
 $kmellum-blue: #004876;
+$zurb-orange: #F08A24;
+
 .side-nav li a{
   font-family: 'Amatic SC', cursive;
   background: $kmellum-blue;
@@ -32,6 +34,9 @@ $kmellum-blue: #004876;
 .topHeader{
   color:#FFFFFF;
   letter-spacing: 15px;
+}
+.topHeader:hover{
+  color: $zurb-orange;
 }
 #login{
 }
@@ -180,11 +185,13 @@ body{
   font-family: 'Shadows Into Light', cursive;
 }
 .canvasExitButton{
-  font-size: 70px;
+  font-size: 50px;
+}
+.assignmentInfoCloseButton{
+  color: #F08A24;
 }
 #assignmentInfoPopup{
-  background: $kmellum-blue;
-  opacity: .85;
+  background: #3F7598;
   color: #FFFFFF;
 }
 #assignmentInfoPopup p{
@@ -277,4 +284,14 @@ body{
 .question{
   display:block;
 }
+.off-canvas.bottom{
+  background: $kmellum-blue;
+  opacity: none;
+}
+.offCanvasTitle h3{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
+
 

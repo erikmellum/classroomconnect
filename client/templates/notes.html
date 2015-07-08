@@ -3,6 +3,7 @@ name: notes
 url: /notes
 animationIn: slideInUp
 animationOut: slideOutLeft
+
 ---
 <div class="grid-content">
 	<div class="grid-block ">
@@ -16,38 +17,47 @@ animationOut: slideOutLeft
 		<div class="grid-content pageHeader">
 			<div zf-tabs="">
 				<div zf-tab="" title="Week 1" class="notesHeader">
-					<zf-accordion auto-open="false" collapsible="true">	
+					<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
 				  <zf-accordion-item title="Notes" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+				  	<a class="download notesDownloadButton" href="{{notes.location}}">
+				  		<i class="downloadIconN fa fa-download notesDownloadButton fa-2x"></i></a>
+							<p>Welcome to the First Day of School!</p>
+				 		 <a class="download notesDownloadButton" href="{{notes.location}}">
+				 	 		<i class="downloadIconN fa fa-download notesDownloadButton fa-2x"></i></a>
+							<p>The Fall of the Roman Empire</p>
+						<a class="download notesDownloadButton" href="{{notes.location}}">
+							<i class="downloadIconN fa fa-download notesDownloadButton fa-2x"></i></a>
+							<p>Solving for 2 Unkonwn Variables</p>
+					</zf-accordion-item>
+					<zf-accordion-item title="Handouts" class="notesAccordion">
+						<p>More to come.</p>
+					</zf-accordion-item>
+					<zf-accordion-item title="Resources" class="notesAccordion">
+						<a href="https://www.youtube.com/watch?v=oPf27gAup9U/"><i class="downloadIconN screencastIcon fa fa-youtube-play fa-2x"></i></a>
+						<p>Crash Course on Roman History</p>
+				</zf-accordion-item>
+			</div>
+			<div zf-tab="" title="Week 2" class="notesHeader">
+ 				<zf-accordion auto-open="false" collapsible="true">	
+				  <zf-accordion-item title="Notes" class="notesAccordion">
+							<p>More to come.</p>
 					</zf-accordion-item>
 						<zf-accordion-item title="Handouts" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+							<p>More to come.</p>
 					</zf-accordion-item>
 						<zf-accordion-item title="Resources" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
-					</zf-accordion-item>
-				</div>
-				<div zf-tab="" title="Week 2" class="notesHeader">
-<zf-accordion auto-open="false" collapsible="true">	
-				  <zf-accordion-item title="Notes" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
-					</zf-accordion-item>
-						<zf-accordion-item title="Handouts" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
-					</zf-accordion-item>
-						<zf-accordion-item title="Resources" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+							<p>More to come..</p>
 					</zf-accordion-item>				</div>
 				<div zf-tab="" title="Week 3" class="notesHeader">
 				<zf-accordion auto-open="false" collapsible="true">	
 				  <zf-accordion-item title="Notes" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+							<p>More to come.</p>
 					</zf-accordion-item>
 						<zf-accordion-item title="Handouts" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+							<p>More to come.</p>
 					</zf-accordion-item>
 						<zf-accordion-item title="Resources" class="notesAccordion">
-							<p>Collapsible allows toggable tabs. Click on a tab to open or close it.</p>
+							<p>More to come.</p>
 					</zf-accordion-item>
 				</div>
 			</div>

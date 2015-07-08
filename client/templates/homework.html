@@ -20,8 +20,7 @@ controller: HomeworkCtrl
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>
-          <a ng-show="assignment.location" class="download homeworkDownloadButton" href="{{assignment.location}}"><i class="fa fa-download"></i></a>
-          
+          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i class="downloadIconA fa fa-download homeworkDownloadButton"></i></a>
           <p>{{assignment.contents}}</p>
           <div class="grid-content homeworkLabels">
           <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)"><b>{{subject}}</b></span>

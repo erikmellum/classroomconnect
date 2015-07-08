@@ -90,15 +90,19 @@ body{
 .homeworkLabel:hover{
 	opacity: .7;
 }
-.homeworkDownloadButton{
-  color: #CC7A29;
+.downloadIconA{
+  color: #F08A24;
 	position: absolute; 
 	top: 1.5rem; 
 	right: 1.5rem; 
-	font-size: 150%;
+  zoom: 150%;
 }
-.homeworkDownloadButton:hover{
-  color: #995C1F;
+.downloadIconA:hover{
+  color: #F08A24;
+  opacity: .7;
+}
+.downnloadIconA:visited{
+  color: #F08A24;
 }
 .homeworkDescriptionButton{
   background: #CC7A29;
@@ -184,7 +188,6 @@ body{
   background: $kmellum-blue;
   opacity: .98;
 }
-
 .tabs .tab-item.is-active {
       background: $kmellum-blue;
       color: #FFFFFF;
@@ -221,7 +224,7 @@ body{
   display: none; 
   }
 .accordion-content p{
-  font-size: 30px;
+  font-size: 18px;
 }
   .is-active > .accordion-content 
   {
@@ -243,7 +246,15 @@ body{
 .notesInfoPopup{
   font-size: 50px;
 }
+.downloadIconN{
+  color: #F08A24;
+  float: left;
+  padding-right: 1rem;
+  }
+.downloadIconN:hover{
+  color: $kmellum-blue;
+  opacity: .98;
+}
 .activeLink{
   background: #00548a;
-  opacity: .98;
 }

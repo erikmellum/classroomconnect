@@ -408,9 +408,63 @@ body{
 }
 .testButton:hover{
   color: $zurb-orange;
+
 }
 .modal{
     max-width: 800px; 
     overflow: auto;
+    opacity: .9;
+}
+.modalContent p{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.modal h3{
+  color: #FFFFFF;
+}
+.modalContent h3{
+  font-size: 50px;
+  text-align: center;
+}
+.modalContent h4{
+  color:#FFFFFF;
+  font-size: 26px;
+}
+.modalCloseButton{
+  font-size: 50px;
+  color: #FFFFFF;
+}
+.modalCloseButton:hover{
+  color: $zurb-orange;
+}
+.notesIcons{
+  color: $zurb-orange;
+  text-align: center;
+  letter-spacing: 15px;
+
+}
+.activityIcon:hover{
+  color: #FFFFFF;
+  zoom: 115%;
+}
+.discussionIcon:hover{
+  color: #FFFFFF;
+  zoom: 115%;
+}
+.closureIcon:hover{
+  color: #FFFFFF;
+  zoom: 115%;
+}
+.resourcesIcon:hover{
+  color: #FFFFFF;
+  zoom: 115%;
+}
+.lessonImage{
+  height: 300px;
+  width: 400px;
+  float: right;
+  margin-left: 5px;
+  border: solid;
+  border-color: #FFFFFF;
 }
 

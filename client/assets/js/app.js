@@ -55,9 +55,8 @@
     }]
   }]);
 
-  config.$inject = ['$urlRouterProvider', '$locationProvider'];
-
-  function config($urlProvider, $locationProvider) {
+  config.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider'];
+  function config($urlProvider, $locationProvider, $stateProvider) {
     $urlProvider.otherwise('/');
 
     $locationProvider.html5Mode({
@@ -112,7 +111,7 @@
         title: 'First Day of School', 
         dueDate: '05/31/15', 
         contents: 'the quick brown fox jumps over the lazy dog. this is a sentence that uses every letter of the alphabet.', 
-        location: 'homework/homework.pdf',
+        location: '/homework/homework.pdf',
         subjects: [
             'history',
             'English'

@@ -2,29 +2,45 @@
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light|Pathway+Gothic+One|Over+the+Rainbow|Amatic+SC|Old+Standard+TT);
 $kmellum-blue: #004876;
+$kmellum-dark-blue: #00548a;
 $zurb-orange: #F08A24;
 
 .side-nav li a{
   font-family: 'Amatic SC', cursive;
-  background: $kmellum-blue;
-  opacity: .75;
   color: #FFFFFF;
   font-size: 30px;
-}
-.side-nav li a:hover{
-  background: $kmellum-blue;
-  opacity: .98;
-  color: #FFFFFF;
-  font-size: 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .side-nav li a:active{
   background: $kmellum-blue;
   color: #FFFFFF; 
   opacity: .98;
 }
-.sideBarNavItem.is-active{
-    color: #FFFFFF; 
-    opacity: .98;
+.sideBarNavItem{
+  background: $kmellum-blue;
+  padding-left: 1rem;
+  opacity: .75;
+  transition-property: opacity;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+  border-bottom: 1px solid white;
+}
+.sideBarNavItem:hover{
+  opacity: .98;
+}
+.sideBar.grid-content{
+  padding: 0;
+}
+.activeLink.sideBarNavItem{
+  opacity: .98;
+}
+.side-nav ul{
+  margin-left: 0;
+  width: 100%;
+  padding-left: 0;
+  list-style-type: none;
 }
 .topBar{
   font-size: 30px;
@@ -188,11 +204,26 @@ body{
   font-size: 50px;
 }
 .assignmentInfoCloseButton{
+  top: -.75rem;
+  right: .25rem;
   color: #FFFFFF;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
 }
+.assignmentInfoCloseButton:hover{
+  color: $zurb-orange;
+}
+.assignmentInfoCloseButton:active{
+  color: #333;
+}
+
 #assignmentInfoPopup{
   background: #3F7598;
+  padding: 1rem;
   color: #FFFFFF;
+  width: 231px;
+  height: 600px;
 }
 .notesHeader{
   border: solid;
@@ -298,7 +329,7 @@ body{
 }
 .carrotDescription p{
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .downloadDescription{
@@ -307,7 +338,7 @@ body{
 }
 .downloadDescription p{
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .searchDescription{
@@ -316,7 +347,7 @@ body{
 }
 .searchDescription p{
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .handoutsDescription{
@@ -325,7 +356,7 @@ body{
 }
 .handoutsDescription p{
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .playDescription{
@@ -334,7 +365,7 @@ body{
 }
 .playDescription p{
   display: inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }
 .infoDescription{
@@ -343,6 +374,6 @@ body{
 }
 .infoDescription p{
   display:inline;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 5px;
 }

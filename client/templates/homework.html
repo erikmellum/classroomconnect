@@ -28,7 +28,7 @@ controller: HomeworkCtrl
       </div>
       <div class="handoutsDescription">
         <i class="legend fa fa-file-text"></i>
-        <p>Handout from Class</p>
+        <p>Handout</p>
      </div>
       <div class="searchDescription">
         <i class="legend fa fa-search"></i>
@@ -48,7 +48,7 @@ controller: HomeworkCtrl
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>
-          <a ng-show="assignment.location" class="download" TARGET="_blank" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
+          <a ng-show="assignment.location" class="download" target="_self" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
           <p>{{assignment.contents}}</p>
           <div class="grid-content homeworkLabels">
           <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)"><b>{{subject}}</b></span>

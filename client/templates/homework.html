@@ -43,12 +43,12 @@ controller: HomeworkCtrl
     <i class="fa fa-search assignmentSearchIcon fa-lg"></i>
     <i class="fa fa-info-circle assignmentsInfoIcon fa-lg" zf-toggle="assignmentInfoPopup" size="large"></i>
     <h2 zf-close="assignmentInfoPopup"><span>Assignments: Currently viewing {{subjects.slice(0,subjects.length-1).join(", ")}}</span><span ng-if="subjects.length>1"> and</span><span> {{subjects[subjects.length-1]}} assignments.</span></h2>
-  <div zf-close="assignmentInfoPopup" class="grid-block wrap">
+  <div class="grid-block wrap">
     <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments" ng-if="containsSubject(assignment)">
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>
-          <a ng-show="assignment.location" class="download" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
+          <a ng-show="assignment.location" class="download" TARGET="_blank" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
           <p>{{assignment.contents}}</p>
           <div class="grid-content homeworkLabels">
           <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)"><b>{{subject}}</b></span>

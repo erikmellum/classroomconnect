@@ -111,7 +111,7 @@ body{
 	position: absolute; 
 	top: 1.5rem; 
 	right: 1.5rem; 
-  zoom: 150%;
+  zoom: 200%;
 }
 .downloadIconA:hover{
   color: #F08A24;
@@ -188,15 +188,11 @@ body{
   font-size: 50px;
 }
 .assignmentInfoCloseButton{
-  color: #F08A24;
+  color: #FFFFFF;
 }
 #assignmentInfoPopup{
   background: #3F7598;
   color: #FFFFFF;
-}
-#assignmentInfoPopup p{
-  font-size: 30px; 
-  text-align: center;
 }
 .notesHeader{
   border: solid;
@@ -290,8 +286,63 @@ body{
 }
 .offCanvasTitle h3{
   color: #FFFFFF;
+  font-size: 50px;
   text-align: center;
-  font-size: 40px;
 }
-
-
+.legend{
+  color: $zurb-orange;
+  zoom: .75;
+}
+.carrotDescription{
+  text-align: left;
+}
+.carrotDescription p{
+  display: inline;
+  font-size: 30px;
+  padding-left: 5px;
+}
+.downloadDescription{
+  text-align: left;
+  margin-right: 3px;
+}
+.downloadDescription p{
+  display: inline;
+  font-size: 30px;
+  padding-left: 5px;
+}
+.searchDescription{
+  text-align: left;
+  margin-right: 3px;
+}
+.searchDescription p{
+  display: inline;
+  font-size: 30px;
+  padding-left: 5px;
+}
+.handoutsDescription{
+  text-align: left;
+  margin-right: 3px;
+}
+.handoutsDescription p{
+  display: inline;
+  font-size: 30px;
+  padding-left: 5px;
+}
+.playDescription{
+  text-align: left;
+  margin-right: 3px;
+}
+.playDescription p{
+  display: inline;
+  font-size: 30px;
+  padding-left: 5px;
+}
+.infoDescription{
+  text-align:left;
+  margin-right: 3px;
+}
+.infoDescription p{
+  display:inline;
+  font-size: 30px;
+  padding-left: 5px;
+}

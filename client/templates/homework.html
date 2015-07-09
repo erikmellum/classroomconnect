@@ -8,13 +8,36 @@ controller: HomeworkCtrl
   
 
   <div class="grid-container pageHeader" style="margin: 1rem;">
-  <zf-offcanvas id="assignmentInfoPopup" class="canvasExitButton" position="bottom">
+  <zf-offcanvas id="assignmentInfoPopup" class="canvasExitButton" position="left">
   <a zf-close="assignmentInfoPopup" class="assignmentInfoCloseButton close-button">×</a>
     <div class="offCanvasTitle">   
       <h3> Icon Legend</h3>
     </div>
-    <div class="offCanvasContent"> 
-      <i class="fa fa-download"></i>
+    <div class="offCanvasContent">
+      <div class="infoDescription">
+        <i class="legend fa fa-info-circle"></i>
+        <p>Information</p>
+      </div> 
+      <div class="carrotDescription">
+        <i class="legend carrot fa fa-angle-double-right"></i>
+        <p>View More</p>
+      </div>
+      <div class="downloadDescription"> 
+        <i class="legend fa fa-download"></i>
+        <p>Download</p>
+      </div>
+      <div class="handoutsDescription">
+        <i class="legend fa fa-file-text"></i>
+        <p>Handout from Class</p>
+     </div>
+      <div class="searchDescription">
+        <i class="legend fa fa-search"></i>
+        <p>Search</p>
+      </div>  
+      <div class="playDescription">
+        <i class="legend fa fa-youtube-play"></i>
+        <p>Play Video</p>
+       </div> 
     </div>  
   </zf-offcanvas>
     <i class="fa fa-search assignmentSearchIcon fa-lg"></i>
@@ -25,7 +48,7 @@ controller: HomeworkCtrl
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>
-          <a ng-show="assignment.location" class="download" href="{{assignment.location}}"><i class="downloadIconA fa fa-download homeworkDownloadButton"></i></a>
+          <a ng-show="assignment.location" class="download" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
           <p>{{assignment.contents}}</p>
           <div class="grid-content homeworkLabels">
           <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)"><b>{{subject}}</b></span>

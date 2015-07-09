@@ -4,6 +4,70 @@ url: /
 ---
 
 <div class="grid-content">
-    <h2>Welcome!</h2> 
-     <p class="lead">I'm so glad you're here.</p>
+    <div class="homeContent">
+        <h2>Welcome!</h2> 
+
+     <p class="lead">I'm so glad you're here. I'm Mrs. Mellum, and this is our classroom website! </p>
+     <h3>About Mrs. Mellum</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     <div zf-action-sheet="">
+      <div zf-as-button="" title="Things Mrs. Mellum likes"></div>
+      <div zf-as-content="" position="bottom">
+      <p></p>
+      <ul>
+     <li><a zf-open="whatKrissyLikes" class="button">Random</a></li>
+      <li><a href="#">Thing 2</a></li>
+      <li><a href="#">Thing 3</a></li>
+      <li><a zf-open="whatYouLike" class="button">Tell Mrs. Mellum what you like!</a></li>
+      </ul>
+      </div>
+      </div>
+     <div zf-action-sheet="">
+      <div zf-as-button="" title="Things Mrs. Mellum doesn't like"></div>
+      <div zf-as-content="" position="bottom">
+      <p></p>
+      <ul>
+      <li><a href="#">Thing 1</a></li>
+      <li><a href="#">Thing 2</a></li>
+      <li><a href="#">Thing 3</a></li>
+      <li><a zf-open="whatYouDontLike" class="button">Tell Mrs. Mellum what you don't like!</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <h3>A word about the website</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Thats it, Lets work together and have a fantastic year!!!</h2>
+    <blockquote><q>Those who mind don't matter and those who matter don't mind - Dr. Seuss</q></blockquote>
+    </div>
 </div>
+
+
+<div zf-modal="" class="aboutPopup" id="whatKrissyLikes">
+      <a zf-close="whatKrissyLikes" class="close-button">×</a>
+      <h3>Cats</h3>
+      <progress style="color: blue;" value="65" max="100"></progress>
+      <h3>Dogs</h3>
+      <progress value="95" max="100"></progress>
+      <h3>Scary Movies</h3>
+      <progress class="medium" value="75" max="100"></progress>
+      <h3>Scrambled Eggs</h3>
+      <progress class="medium" value="15" max="100"></progress>
+      </div>
+
+<div zf-modal="" id="whatYouDontLike">
+      <a zf-close="whatYouDontLike" class="close-button">×</a>
+      <h3>Back in my days...</h3>
+      <p>There were 3 Star Wars movies and Disney only made cartoons.</p>
+      </div>
+

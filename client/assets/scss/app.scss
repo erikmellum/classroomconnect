@@ -18,6 +18,22 @@ $zurb-orange: #F08A24;
   color: #FFFFFF; 
   opacity: .98;
 }
+.homeContent{
+  margin-top: 1rem;
+  background: $kmellum-blue;
+  opacity: .75;
+  padding: 1rem;
+  color: white;
+  p, h4, h3, h2{
+    color: white;
+  }
+}
+.aboutPopup{
+  aside{
+  background: #3F7598;
+  color: white;
+  }
+}
 .sideBarNavItem{
   background: $kmellum-blue;
   padding-left: 1rem;
@@ -201,7 +217,7 @@ body{
   font-family: 'Shadows Into Light', cursive;
 }
 .canvasExitButton{
-  font-size: 50px;
+  font-size: 40px;
 }
 .assignmentInfoCloseButton{
   top: -.75rem;
@@ -221,8 +237,9 @@ body{
 #assignmentInfoPopup{
   background: #3F7598;
   padding: 1rem;
+  margin-top: 4rem;
   color: #FFFFFF;
-  width: 231px;
+  width: 220px;
   height: 600px;
 }
 .notesHeader{
@@ -373,6 +390,15 @@ body{
   margin-right: 3px;
 }
 .infoDescription p{
+  display:inline;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.pencilDescription{
+  text-align:left;
+  margin-right: 3px;
+}
+.pencilDescription p{
   display:inline;
   font-size: 20px;
   padding-left: 5px;

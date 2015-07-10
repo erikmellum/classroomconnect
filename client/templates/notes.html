@@ -4,12 +4,19 @@ url: /notes
 animationIn: slideInUp
 animationOut: slideOutLeft
 
+
 ---
 <div class="grid-content">
-	<div class="grid-block ">
 	<i class="fa fa-info-circle notesInfoIcon fa-lg" zf-toggle="notesInfoPopup" size="large"></i>
+				
+<span class="notesSearchBar">
+	<form><input type="search" placeholder="Search for notes..."></form>
+</span>	
 
+
+	<div class="grid-block ">
   <div  class="grid-container pageHeader" style="margin: 1rem;">
+
   <zf-offcanvas id="notesInfoPopup" class="canvasExitButton" position="bottom">
   <a zf-close="notesInfoPopup" class="notesInfoclose-button">×</a>
   <p>This is the assignments page; here you will find all the information about upcoming assignments. You can search for assignments by name, or you can filter assignments by subject.  Some assignments may also have a download icon in the upper right corner. This means there is additional content that you will need in order to complete the assignment. You may download the additional content by clicking on the download icon. As always, please do not hesitate to contact me if you have any questions.</p>
@@ -30,7 +37,6 @@ animationOut: slideOutLeft
 							<p>Solving for 2 Unkonwn Variables</p>
 					</zf-accordion-item>
 					<zf-accordion-item title="Handouts" class="notesAccordion">
-					  <i class="downloadIconH fa fa-file-text"></i>
 						<p>More to come.</p>
 					</zf-accordion-item>
 					<zf-accordion-item title="Resources" class="notesAccordion">
@@ -78,24 +84,21 @@ animationOut: slideOutLeft
 						<li style="width: 25%;">
 							<i class="noteIcon activityIcon fa fa-puzzle-piece fa-3x"></i>
 							<ul class="subListNotesIconList">
-								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Crash Course</h4></a></li>
-								<li><a href="http://study.com/academy/lesson/electrochemical-cells-and-electrochemistry.html" target="_blank"><h4>Wanna Know More?</h4></a></li>
+								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Activity</h4></a></li>
 							</ul>
 						</li>
 
 						<li style="width: 25%;">
 							<i class="noteIcon discussionIcon fa fa-comments fa-3x"></i>
 							<ul class="subListNotesIconList">
-								<li><a class ="notesLink" href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Crash Course</h4></a></li>
-								<li><a href="http://study.com/academy/lesson/electrochemical-cells-and-electrochemistry.html" target="_blank"><h4>Wanna Know More?</h4></a></li>
+								<li><a class ="notesLink" href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Discussion</h4></a></li>
 							</ul>
 						</li>
 
 						<li style="width: 25%;">
 							<i class="noteIcon closureIcon fa fa-spinner fa-3x"></i>
 								<ul class="subListNotesIconList">
-								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Crash Course</h4></a></li>
-								<li><a href="http://study.com/academy/lesson/electrochemical-cells-and-electrochemistry.html" target="_blank"><h4>Wanna Know More?</h4></a></li>
+								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Closure</h4></a></li>
 							</ul>
 						</li>
 

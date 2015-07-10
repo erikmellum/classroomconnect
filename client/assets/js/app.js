@@ -55,7 +55,7 @@
 
     $scope.news=[{
       title: 'Welcome to a New School Year',
-      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      content: 'Hello and welcome to the beginning of a new school year!',  
       date: 'August 17, 2015'
     }
     /**,
@@ -193,6 +193,8 @@
       return false;
     }
 
+
+
     $scope.assignments=[
       {
         title: 'First Day of School', 
@@ -205,7 +207,7 @@
           ]
       },
       {
-        title: 'Assignment #2', 
+        title: 'Letter to Your Future Self', 
         dueDate: '06/31/15', 
         contents: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         location: 'homework/homework.pdf',
@@ -213,19 +215,20 @@
             'English'
           ]
       },
-      {title: 'Assignment #3', 
-      dueDate: '07/31/15', 
-      contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..',
-      subjects: [
-            'science'
+      {
+        title: 'Solving for X', 
+        dueDate: '07/31/15', 
+        contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..',
+        subjects: [
+              'science'
           ]
-    },
-      {title: 'Assignment #4', 
-      dueDate: '08/31/15', 
-      contents: 'Prepare to learn the usual.',
-      subjects: [
-            'English'
-            
+      }, 
+      {
+        title: 'Solving for X', 
+        dueDate: '07/31/15', 
+        contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..',
+        subjects: [
+              'science'
           ]
     }
     ];

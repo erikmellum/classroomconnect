@@ -38,7 +38,7 @@
       href: 'calendar'
     },
     {
-      content: 'Notes & Downloads',
+      content: 'Notes etc.',
       href: 'notes'
     },
     {

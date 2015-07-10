@@ -242,6 +242,9 @@ body{
   width: 220px;
   height: 600px;
 }
+.currentlyViewing{
+  color: $zurb-orange;
+}
 .notesHeader{
   border: solid;
   opacity: .75;
@@ -478,10 +481,17 @@ body{
   list-style-type: none; 
   right: .5rem; 
   position: relative;
-}
+}  
 .subListNotesIconList li a h4{
-  font-size: 125%;
+  font-size: 145%;
+  transition: all .5s ease-out;
+
 }
+.subListNotesIconList li a h4:hover{
+  color: $zurb-orange;
+  transform: scale(1.1);
+}
+
 .pageButtons{
   float: right;
 }
@@ -497,7 +507,6 @@ body{
 }
 .newsCard{
   width: 90%;
-  max-height: 250px;
   margin: 0px auto;
   margin-bottom: 2rem;
 }
@@ -516,6 +525,6 @@ body{
   border-radius: 0 0 5px 5px;
   opacity: .85;
   background-color: $kmellum-blue;
-  height: 150px;
+  height: 250px;
   overflow: auto;
 }

@@ -13,11 +13,7 @@
     .config(config)
     .run(run)
   ;
-  classroomConnect.filter('iif', function () {
-   return function(input, trueValue, falseValue) {
-        return input ? trueValue : falseValue;
-   };
-  });
+
   classroomConnect.controller('NavCtrl', ['$scope', function($scope){
     $scope.selected = {};
    $scope.select= function(item) {
@@ -55,6 +51,97 @@
     }]
   }]);
 
+  classroomConnect.controller('NewsCtrl', ['$scope', function($scope){
+
+    $scope.news=[{
+      title: 'Welcome to a New School Year',
+      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      date: 'August 17, 2015'
+    }
+    /**,
+    
+    {
+      title: 'Quizzes',
+      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      date: 'date'
+    },
+    {
+      title: 'Calendar',
+      content: 'calendar',
+      date: 'date'
+
+    },
+    {
+      title: 'Notes & Downloads',
+      content: 'notes',
+      date: 'date'
+
+    },
+    {
+      title: 'Forums',
+      content: 'forums',
+      date: 'date'
+
+    },
+    {
+      title: 'News',
+      content: 'news', 
+      date: 'date'
+    }
+    ,
+    {
+      title: 'Test',
+      content: 'news',
+      date: 'date'
+    }
+    ,
+    {
+      title: 'Asdf',
+      content: 'news',
+      date: 'date'
+    }
+    ,
+    {
+      title: 'Hello',
+      content: 'news',
+      date: 'date'
+ 
+    }
+    ,
+    {
+      title: 'ABC',
+      content: 'news', 
+      date: 'date'
+
+    },
+    {
+      title: 'Hello',
+      content: 'news', 
+      date: 'date'
+
+    }
+    ,
+    {
+      title: 'Hello',
+      content: 'news', 
+      date: 'date'
+
+    }**/];
+
+    
+     
+    $scope.currentPage = 0;
+    $scope.pageSize = 5;
+    $scope.numberOfPages=function(){
+        return Math.ceil($scope.news.length/$scope.pageSize);                
+    }
+  }]);
+  classroomConnect.filter('startFrom', function() {
+    return function(list, firstItem) {
+        firstItem = +firstItem; //parse to int
+        return list.slice(firstItem);
+    }
+  });
   config.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider'];
   function config($urlProvider, $locationProvider, $stateProvider) {
     $urlProvider.otherwise('/');

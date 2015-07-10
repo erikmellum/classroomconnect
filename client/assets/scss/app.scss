@@ -437,26 +437,21 @@ body{
 .modalCloseButton:hover{
   color: $zurb-orange;
 }
-.notesIcons{
+.noteIcons{
   color: $zurb-orange;
   text-align: center;
+  background: none;
+  margin-left: none;
 }
-.activityIcon:hover{
-  color: #FFFFFF;
+.noteIcon{
+  color: $zurb-orange;
   zoom: 115%;
+  font-size: 85%;
+  transition-property: transform, color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
 }
-.discussionIcon:hover{
-  color: #FFFFFF;
-  zoom: 115%;
-}
-.closureIcon:hover{
-  color: #FFFFFF;
-  zoom: 115%;
-}
-.resourcesIcon:hover{
-  color: #FFFFFF;
-  zoom: 115%;
-}
+
 .lessonImage1{
   height: 300px;
   width: 400px;
@@ -465,5 +460,62 @@ body{
   border: solid;
   border-color: #FFFFFF;
 }
-.
-
+.actionSheetContent a{
+  color: #FFFFFF;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  background: $zurb-orange;
+  opacity: .9
+}
+.lead{
+  text-align: center;
+}
+.aboutQuote{
+  color: #FFFFFF;
+  font-size: 27px;
+}
+.subListNotesIconList{
+  list-style-type: none; 
+  right: .5rem; 
+  position: relative;
+}
+.subListNotesIconList li a h4{
+  font-size: 125%;
+}
+.pageButtons{
+  float: right;
+}
+.newsButtonsContainer{
+  height: 1rem;
+  margin: .25rem 1rem;
+  margin-right: 5%;
+}
+.newsPageDetails{
+  float: right;
+  margin-top: .150rem;
+  margin-right: .25rem;
+}
+.newsCard{
+  width: 90%;
+  max-height: 250px;
+  margin: 0px auto;
+  margin-bottom: 2rem;
+}
+.newsTitleHeader{
+  background-color: $kmellum-blue;
+  font-size: 40px;
+  opacity: .7;
+  padding: .5rem;
+  border-radius: 5px 5px 0 0;
+}
+.card.newsCard{
+  background: none;
+  border: none;
+}
+.cardSection{
+  border-radius: 0 0 5px 5px;
+  opacity: .85;
+  background-color: $kmellum-blue;
+  height: 150px;
+  overflow: auto;
+}

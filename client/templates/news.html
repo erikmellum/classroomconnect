@@ -3,11 +3,28 @@ name: news
 url: /news
 animationIn: fadeIn
 animationOut: slideOutLeft
+controller: NewsCtrl
 ---
 	<div class="grid-block">
 		<div class="grid-content">
-			<h2>Classroom News and Updates</h2>
+      <div class="newsButtonsContainer">
+        <button ng-disabled="currentPage >= news.length/pageSize - 1" ng-click="currentPage=currentPage+1" class="pageButtons">Next</button>
+        <span class="newsPageDetails">{{currentPage+1}}/{{numberOfPages()}}</span>
 
-			<p class="lead">Select a user or group to start chatting with. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.</p>
-		</div>
-	</div>
+        <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="pageButtons">Previous</button>
+      </div>
+      <div style="margin-top: .5rem;">
+  			<div class="card newsCard" ng-repeat="announcement in news | startFrom:currentPage*pageSize | limitTo:pageSize">
+          <div class="card-divider newsTitleHeader">
+            <div class="newsTitle">
+             {{announcement.title}}
+            </div>
+          </div>
+          <div class="card-section cardSection">
+            <h4>{{announcement.date}}</h4> 
+              <p>{{announcement.content}}</p>         
+          </div>
+        </div>
+      </div> 
+	 </div>
+  </div>

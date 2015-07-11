@@ -96,6 +96,13 @@ body{
 	transition-duration: .5s;
 	transition-timing: ease-out;
 }
+.searchAssignments{
+  font-family: 'Shadows Into Light', cursive;
+  float: right;
+}
+.search{
+  overflow:hidden;
+}
 .assignmentContent{
   padding: .75rem;
 }
@@ -194,17 +201,14 @@ body{
   color: #CC7A29;
 }
 .assignmentSearchIcon{
-  float: right;
   margin-top: .5rem; 
   color: $kmellum-blue;
   opacity: .75;
   cursor: pointer;
+  margin-right: .5rem;
   transition-property: color;
   transition-duration: .5s;
   transition-timing: ease-out;
-}
-.assignmentSearchIcon:hover{
-  color: #CC7A29;
 }
 .reminderBox h4{
   font-size: 30px;
@@ -261,7 +265,6 @@ body{
   width: 500%;
 }
 .accordion-title{
-  border-radius: 5px 5px 0 0;
   text-align: center;
   background: $kmellum-blue;
   opacity: .75;
@@ -532,42 +535,4 @@ body{
 }
 .cardSection p{
   font-size: 125%;
-}
-.searchNotesContainer{
-  float: right;
-  margin-right: .5rem;
-}
-.notesSearchIcon{
-  color: $kmellum-blue;
-  opacity: .75;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: .5s;
-  transition-timing: ease-out;
-}
-.notesSearchIcon:hover{
-  color: #CC7A29;
-}
-input[type=search] {
-  margin-top: .5rem;
-  border: solid 1px $zurb-orange;
-  padding: 9px 10px 9px 32px;
-  width: 5%;
-
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-}
-
-input[type=search]:focus {
-  width: 30%;
-  border-color: $kmellum-blue;
-
-  -webkit-box-shadow:0 0 2px rgba(109, 207, 246, .5);
-  -moz-box-shadow: 0 0 2px rgba(109, 207, 246, .5);
-  box-shadow: 0 0 2px rgba(109, 207, 246, .5);
 }

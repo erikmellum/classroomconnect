@@ -23,7 +23,7 @@
           <div class="sideBar grid-content shrink">
             <section class="side-nav">
               <ul class="side-list" ng-controller="NavCtrl">
-                <li ng-repeat="link in links" ng-class="{activeLink: isActive(link)}" class="sideBarNavItem">
+                <li ng-repeat="link in links track by $index" ng-class="{activeLink: isActive(link)}" class="sideBarNavItem">
                   <a ng-click="select(link)" ui-sref="{{link.href}}"><strong>{{link.content}}</strong></a>
                 </li>
               </ul>

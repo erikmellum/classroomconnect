@@ -1,0 +1,184 @@
+[
+  {
+    "accordion": [
+      {
+        "accordionTitle": "Test1",
+        "contents":[
+          {
+            "modalLinkTitle": "Some Awesome Link",
+            "subject": "Science",
+            "unit": "1",
+            "number": "1",
+            "img": "img/electrochemicalReaction.png",
+            "title": "Super awesome science",
+            "paragraphs": [
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              }
+            ],
+            "icons": [
+              {
+                "class": "someclass",
+                "links": [
+                  {
+                    "href": "somelink",
+                    "title": "someTitle"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "modalLinkTitle": "Some Awesome Link 2",
+            "subject": "Math",
+            "unit": "1",
+            "number": "1",
+            "img": "img/electrochemicalReaction.png",
+            "title": "Super awesome math",
+            "paragraphs": [
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              }
+            ],
+            "icons": [
+              {
+                "class": "someclass",
+                "links": [
+                  {
+                    "href": "somelink",
+                    "title": "someTitle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accordionTitle": "Test2",
+        "contents":[
+          {
+            "modalLinkTitle": "Some Awesome Link 3",
+            "subject": "English",
+            "unit": "1",
+            "number": "1",
+            "img": "img/electrochemicalReaction.png",
+            "title": "Super awesome English",
+            "paragraphs": [
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              }
+            ],
+            "icons": [
+              {
+                "class": "someclass",
+                "links": [
+                  {
+                    "href": "somelink",
+                    "title": "someTitle"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "modalLinkTitle": "Some Awesome Link 4",
+            "subject": "history",
+            "unit": "1",
+            "number": "1",
+            "img": "img/electrochemicalReaction.png",
+            "title": "Super awesome history",
+            "paragraphs": [
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              }
+            ],
+            "icons": [
+              {
+                "class": "someclass",
+                "links": [
+                  {
+                    "href": "somelink",
+                    "title": "someTitle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accordionTitle": "Test3"
+      }
+    ]
+  },
+  {
+    "accordion": [
+      {
+        "accordionTitle": "Test1",
+        "contents":[
+          {
+            "modalLinkTitle": "Some Awesome Link",
+            "subject": "Science",
+            "unit": "1",
+            "number": "1",
+            "img": "img/electrochemicalReaction.png",
+            "title": "Super awesome science",
+            "paragraphs": [
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              },
+              {
+                "content": "Some paragraph"
+              }
+            ],
+            "icons": [
+              {
+                "class": "someclass",
+                "links": [
+                  {
+                    "href": "somelink",
+                    "title": "someTitle"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accordionTitle": "Test2"
+      },
+      {
+        "accordionTitle": "Test3"
+      }
+    ]
+  }
+]

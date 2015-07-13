@@ -3,109 +3,43 @@ name: notes
 url: /notes
 animationIn: slideInUp
 animationOut: slideOutLeft
-
+controller: NotesCtrl
 
 ---
 <div class="grid-content">
-
 	<div class="grid-block ">
-  <div  class=" pageHeader" style="margin: 1rem;">
-
-  <zf-offcanvas id="notesInfoPopup" class="canvasExitButton" position="bottom">
-  <a zf-close="notesInfoPopup" class="notesInfoclose-button">×</a>
-  <p>This is the assignments page; here you will find all the information about upcoming assignments. You can search for assignments by name, or you can filter assignments by subject.  Some assignments may also have a download icon in the upper right corner. This means there is additional content that you will need in order to complete the assignment. You may download the additional content by clicking on the download icon. As always, please do not hesitate to contact me if you have any questions.</p>
-  </zf-offcanvas>
 		<div class="grid-content pageHeader">
 			<div zf-tabs="">
-				<div zf-tab="" title="Week 1" class="notesHeader">
-					<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
-				  <zf-accordion-item title="Notes" class="notesAccordion">
-				  	<a class="download notesDownloadButton" href="{{notes.location}}">
-				  		<i class="downloadIconN fa fa-pencil notesDownloadButton"></i></a>
-							<p>Welcome to the First Day of School!</p>
-				 		 <a class="download notesDownloadButton" href="{{notes.location}}">
-				 	 		<i class="downloadIconN fa fa-pencil notesDownloadButton"></i></a>
-							<p>The Fall of the Roman Empire</p>
-						<a class="download notesDownloadButton" href="{{notes.location}}">
-							<i class="downloadIconN fa fa-pencil notesDownloadButton"></i></a>
-							<p>Solving for 2 Unkonwn Variables</p>
-					</zf-accordion-item>
-					<zf-accordion-item title="Handouts" class="notesAccordion">
-						<p>More to come.</p>
-					</zf-accordion-item>
-					<zf-accordion-item title="Resources" class="notesAccordion">
-						<a target="_blank" href="https://www.youtube.com/watch?v=oPf27gAup9U/"><i class="downloadIconN screencastIcon fa fa-youtube-play"></i></a>
-						<p>Crash Course on Roman History</p>
-				</zf-accordion-item>
-			</div>
-			<div zf-tab="" title="Week 2" class="notesHeader">
- 				<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
-				  <zf-accordion-item title="Notes" class="notesAccordion">
-				  	<i class="downloadIconN fa fa-pencil notesDownloadButton" zf-open="basicModalNotes" ></i>
-				  	<a zf-open="basicModalNotes" class="testButton"><p>Electrochemical Reactions</p></a>
-					</zf-accordion-item>
-						<zf-accordion-item title="Handouts" class="notesAccordion">
-						 <i class="downloadIconH fa fa-file-text"></i>
-							<a href="img/romeTimeline.png" class="testButton" target="blank"><p>Ancient Rome Timeline</p></a>
-					</zf-accordion-item>
-						<zf-accordion-item title="Resources" class="notesAccordion">
-							<p>More to come..</p>
-					</zf-accordion-item>				
-					</div>
-				<div zf-tab="" title="Week 3" class="notesHeader">
-				<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
-				  <zf-accordion-item title="Notes" class="notesAccordion">
-					</zf-accordion-item>
-						<zf-accordion-item title="Handouts" class="notesAccordion">
-							<p>More to come.</p>
-					</zf-accordion-item>
-						<zf-accordion-item title="Resources" class="notesAccordion">
-					</zf-accordion-item>
+
+				<div zf-tab="" ng-repeat="week in weeks" class="notesHeader" title="Week {{$index+1}}" class="notesHeader">
+	 				<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
+	 				  
+					  <zf-accordion-item  ng-repeat="item in week.accordion" title="{{item.accordionTitle}}" class="notesAccordion">
+					  	<div ng-repeat="content in item.contents" class="accordionContents">
+						  	<i class="downloadIconN fa fa-pencil notesDownloadButton" zf-open="basicModalNotes{{$parent.$parent.$parent.$index}}{{$parent.$index}}{{$index}}" ></i>
+						  	<a zf-open="basicModalNotes{{$parent.$parent.$parent.$index}}{{$parent.$index}}{{$index}}" class="testButton">{{content.modalLinkTitle}}</a>
+								<div zf-modal="" id="basicModalNotes{{$parent.$parent.$parent.$parent.$index}}{{$parent.$parent.$index}}{{$index}}">
+							    <a zf-close="basicModalNotes{{$parent.$parent.$parent.$parent.$parent.$index}}{{$parent.$parent.$parent.$index}}{{$parent.$index}}" class="close-button modalCloseButton">×</a>
+							    <div class="modalContent">
+							      <h4>Subject: {{content.subject}}<br>Unit: {{content.unit}}<br>#: {{content.number}}<br></h4>
+							      <img ng-src="{{content.img}}" class="lessonImage1">
+							      <h3>{{content.title}}</h3>
+							      <p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
+							      <ul class="menu-bar noteIcons" ng-repeat="icon in content.icons">
+							        <li style="width: 25%;">
+							          <i class="noteIcon activityIcon fa {{icon.class}} fa-3x"></i>
+							          <ul class="subListNotesIconList" ng-repeat="link in icon.links">
+							            <li><a href="{{link.href}}" target="_blank"><h4>{{link.title}}</h4></a></li>
+							          </ul>
+							        </li>
+							      </ul>
+							    </div>
+							  </div>
+					  	</div>
+						</zf-accordion-item>
+					</zf-accordion>
 				</div>
 			</div>
-			<div zf-modal="" id="basicModalNotes">
-				<a zf-close="" class="close-button modalCloseButton">×</a>
-				<div class="modalContent">
-					<h4>Subject: Chemistry<br>Unit: 1<br>#: 23<br></h4>
-					<img src="img/electrochemicalReaction.png" class="lessonImage1">
-					<h3>Intro to Electrochemical Reactions</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul class="menu-bar noteIcons">
-						<li style="width: 25%;">
-							<i class="noteIcon activityIcon fa fa-puzzle-piece fa-3x"></i>
-							<ul class="subListNotesIconList">
-								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Activity</h4></a></li>
-							</ul>
-						</li>
-
-						<li style="width: 25%;">
-							<i class="noteIcon discussionIcon fa fa-comments fa-3x"></i>
-							<ul class="subListNotesIconList">
-								<li><a class ="notesLink" href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Discussion</h4></a></li>
-							</ul>
-						</li>
-
-						<li style="width: 25%;">
-							<i class="noteIcon closureIcon fa fa-spinner fa-3x"></i>
-								<ul class="subListNotesIconList">
-								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Closure</h4></a></li>
-							</ul>
-						</li>
-
-						<li style="width: 25%;">
-						<i class="noteIcon resourcesIcon fa fa-book fa-3x"></i>
-							<ul class="subListNotesIconList">
-								<li><a href="https://www.youtube.com/watch?v=IV4IUsholjg" target="_blank"><h4>Crash Course</h4></a></li>
-								<li><a href="http://study.com/academy/lesson/electrochemical-cells-and-electrochemistry.html" target="_blank"><h4>Wanna Know More?</h4></a></li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
- 		</div>
+		</div>
 	</div>
 </div>

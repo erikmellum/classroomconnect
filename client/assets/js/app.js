@@ -15,7 +15,7 @@
     .run(run)
   ;
 
-  classroomConnect.controller('NavCtrl', ['$scope', function($scope){
+  classroomConnect.controller('NavCtrl', ['$scope', '$http', function($scope, $http){
     $scope.selected = {};
    $scope.select= function(item) {
      $scope.selected = item; 
@@ -26,116 +26,26 @@
      return $scope.selected === item;
    };
 
-    $scope.links=[{
-      content: 'Assignments',
-      href: 'assignments'
-    },
-    {
-      content: 'Quizzes',
-      href: 'quizzes'
-    },
-    {
-      content: 'Calendar',
-      href: 'calendar'
-    },
-    {
-      content: 'Notes etc.',
-      href: 'notes'
-    },
-    {
-      content: 'Forums',
-      href: 'forums'
-    },
-    {
-      content: 'News',
-      href: 'news' 
-    }]
+    $scope.links=[];
+    $http.get('assets/json/links.json').success(function(data){
+      $scope.links=data;
+    });
   }]);
 
-  classroomConnect.controller('NewsCtrl', ['$scope', function($scope){
+  classroomConnect.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
 
-    $scope.news=[{
-      title: 'Welcome to a New School Year',
-      content: 'Hello and welcome to the beginning of a new school year!',  
-      date: 'August 17, 2015'
-    }
-    /**,
-    
-    {
-      title: 'Quizzes',
-      content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      date: 'date'
-    },
-    {
-      title: 'Calendar',
-      content: 'calendar',
-      date: 'date'
+    $scope.news=[];
 
-    },
-    {
-      title: 'Notes & Downloads',
-      content: 'notes',
-      date: 'date'
-
-    },
-    {
-      title: 'Forums',
-      content: 'forums',
-      date: 'date'
-
-    },
-    {
-      title: 'News',
-      content: 'news', 
-      date: 'date'
-    }
-    ,
-    {
-      title: 'Test',
-      content: 'news',
-      date: 'date'
-    }
-    ,
-    {
-      title: 'Asdf',
-      content: 'news',
-      date: 'date'
-    }
-    ,
-    {
-      title: 'Hello',
-      content: 'news',
-      date: 'date'
- 
-    }
-    ,
-    {
-      title: 'ABC',
-      content: 'news', 
-      date: 'date'
-
-    },
-    {
-      title: 'Hello',
-      content: 'news', 
-      date: 'date'
-
-    }
-    ,
-    {
-      title: 'Hello',
-      content: 'news', 
-      date: 'date'
-
-    }**/];
-
-    
-     
+    $http.get('assets/json/news.json').success(function(data){
+      $scope.news=data;
+    });
     $scope.currentPage = 0;
     $scope.pageSize = 5;
+
     $scope.numberOfPages=function(){
         return Math.ceil($scope.news.length/$scope.pageSize);                
     }
+
   }]);
   classroomConnect.filter('startFrom', function() {
     return function(list, firstItem) {
@@ -181,7 +91,7 @@
     }
   }
 
-  classroomConnect.controller('HomeworkCtrl', ['$scope', function($scope){
+  classroomConnect.controller('HomeworkCtrl', ['$scope', '$http', function($scope, $http){
     $scope.setSubject=function(subject){
       $scope.subjects=[];
       $scope.subjects.push(subject)
@@ -194,44 +104,20 @@
       return false;
     }
 
+    $scope.assignments=[];
 
+    $http.get('assets/json/assignments.json').success(function(data){
+      $scope.assignments=data;
+    });
 
-    $scope.assignments=[
-      {
-        title: 'First Day of School', 
-        dueDate: '05/31/15', 
-        contents: 'the quick brown fox jumps over the lazy dog. this is a sentence that uses every letter of the alphabet.', 
-        location: '/homework/homework.pdf',
-        subjects: [
-            'history',
-            'English'
-          ]
-      },
-      {
-        title: 'Letter to Your Future Self', 
-        dueDate: '06/31/15', 
-        contents: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        location: 'homework/homework.pdf',
-        subjects: [
-            'English'
-          ]
-      },
-      {
-        title: 'Solving for X', 
-        dueDate: '07/31/15', 
-        contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..',
-        subjects: [
-              'science'
-          ]
-      }, 
-      {
-        title: 'Solving for X', 
-        dueDate: '07/31/15', 
-        contents: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..',
-        subjects: [
-              'science'
-          ]
-    }
-    ];
+    
+  }]);
+  classroomConnect.controller('NotesCtrl', ['$scope', '$http', function($scope, $http){
+    $scope.weeks=[];
+
+    $http.get('assets/json/notes.json').success(function(data){
+      $scope.weeks=data;
+    });
+
   }]);
 })();

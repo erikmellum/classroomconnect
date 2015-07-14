@@ -9,11 +9,11 @@ controller: NotesCtrl
 <div class="grid-content">
 	<div class="grid-block ">
 		<div class="grid-content pageHeader">
-			<div zf-tabs="">
+			<div>
 
-				<div zf-tab="" ng-repeat="week in weeks" class="notesHeader" title="Week {{$index+1}}" class="notesHeader">
-	 				<zf-accordion auto-open="false" collapsible="true" multi-open="true">	
-	 				  
+				<div ng-repeat="week in weeks" class="notesHeader" title="Week {{$index+1}}" class="notesHeader">
+	 				<zf-accordion auto-open="false" collapsible="true" multi-open="true">
+
 					  <zf-accordion-item  ng-repeat="item in week.accordion" title="{{item.accordionTitle}}" class="notesAccordion">
 					  	<div ng-repeat="content in item.contents" class="accordionContents">
 						  	<i class="downloadIconN fa fa-pencil notesDownloadButton" zf-open="basicModalNotes{{$parent.$parent.$parent.$index}}{{$parent.$index}}{{$index}}" ></i>

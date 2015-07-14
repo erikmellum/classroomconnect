@@ -21,14 +21,15 @@
               {
                 "content": "Some paragraph"
               }
+
             ],
             "icons": [
               {
                 "class": "someclass",
                 "links": [
                   {
-                    "href": "somelink",
-                    "title": "someTitle"
+                    "href": "youtube.com",
+                    "title": "click this to see a video on the activity"
                   }
                 ]
               }
@@ -139,7 +140,7 @@
   {
     "accordion": [
       {
-        "accordionTitle": "Test1",
+        "accordionTitle": "Youtube",
         "contents":[
           {
             "modalLinkTitle": "Some Awesome Link",
@@ -161,11 +162,11 @@
             ],
             "icons": [
               {
-                "class": "someclass",
+                "class": "fa-youtube-play",
                 "links": [
                   {
-                    "href": "somelink",
-                    "title": "someTitle"
+                    "href": "http://youtube.com",
+                    "title": "youtube"
                   }
                 ]
               }

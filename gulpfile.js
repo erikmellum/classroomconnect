@@ -11,6 +11,7 @@ var gulp     = require('gulp');
 var rimraf   = require('rimraf');
 var router   = require('front-router');
 var sequence = require('run-sequence');
+var run      = require('gulp-run');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -150,8 +151,13 @@ gulp.task('build', function(cb) {
   sequence('clean', ['copy', 'copy:foundation', 'sass', 'uglify'], 'copy:templates', cb);
 });
 
+
+gulp.task('run', ['build'], function() {
+  return run('cd ./build && python -m SimpleHTTPServer 8001').exec();
+});
+
 // Default task: builds your app, starts a server, and recompiles assets when they change
-gulp.task('default', function () {
+gulp.task('default',['build', 'run'], function () {
   // Watch Sass
   gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
 

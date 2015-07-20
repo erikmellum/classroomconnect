@@ -20,8 +20,7 @@ $zurb-orange: #F08A24;
 }
 .homeContent{
   margin-top: 1rem;
-  background: $kmellum-dark-blue;
-  opacity: .9;
+  background: #417597;
   padding: 1rem;
   color: white;
   p, h4, h3, h2{
@@ -87,7 +86,7 @@ body{
 }
 
 .homeworkCard{
-	height: 300px;
+	height: 400px;
   width: 100%;
 	overflow: auto;
 	opacity: .75;
@@ -95,6 +94,9 @@ body{
 	transition-property: opacity;
 	transition-duration: .5s;
 	transition-timing: ease-out;
+}
+.assignmentContent p{
+  font-size: 200%;
 }
 .searchAssignments{
   font-family: 'Shadows Into Light', cursive;
@@ -106,11 +108,15 @@ body{
 .assignmentContent{
   padding: .75rem;
 }
+.assignmentParagraphs{
+  overflow: auto;
+  height: 240px;
+  padding: .5rem;
+
+}
 .assignmentContent p{
   font-family: 'Shadows Into Light', cursive;
   font-size: 14px;
-  overflow: auto;
-  height: 140px;
 }
 .assignmentContent h3, .assignmentContent h4{
   margin-top: 0;
@@ -545,7 +551,18 @@ body{
   margin-top: 1rem;
 }
 .homeworkPostsContainer{
+
 }
 .pageHeader{
   width: 100%;
+}
+.usPicture{
+   -webkit-transform: rotate(90deg);
+   heiht: 600px;
+   width: 300px;
+   float: right;
+   margin-bottom: 2rem;
+}
+p.assignmentParagraph{
+  font-size: 115%;
 }

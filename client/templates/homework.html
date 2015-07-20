@@ -60,10 +60,13 @@ controller: HomeworkCtrl
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>
-          <a ng-show="assignment.location" class="download" target="_self" ng-href="{{assignment.location}}"><i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
-          <p>{{assignment.contents}}</p>
+          <a ng-show="assignment.location" class="download" target="_self" ng-href="{{assignment.location}}">
+          <i class="downloadIconA fa fa-angle-double-right homeworkDownloadButton"></i></a>
+          <div class="assignmentParagraphs">
+            <p class="assignmentParagraph" ng-repeat="content in assignment.contents track by $index">{{content}}</p>
+          </div>
           <div class="grid-content homeworkLabels">
-          <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects" ng-click="setSubject(subject)"><b>{{subject}}</b></span>
+          <span class="label homeworkLabel warning" ng-repeat="subject in assignment.subjects track by $index" ng-click="setSubject(subject)"><b>{{subject}}</b></span>
           </div>
         </div>
       </div>

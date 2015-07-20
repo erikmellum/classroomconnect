@@ -156,8 +156,22 @@ gulp.task('run', ['build'], function() {
   return run('cd ./build && python -m SimpleHTTPServer 8001').exec();
 });
 
+gulp.task('watch', [], function(){
+ // Watch Sass
+  gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
+
+  // Watch JavaScript
+  gulp.watch(['./client/assets/js/**/*', './js/**/*'], ['uglify:app']);
+
+  // Watch static files
+  gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);
+
+  // Watch app templates
+  gulp.watch(['./client/templates/**/*.html'], ['copy:templates']); 
+});
+
 // Default task: builds your app, starts a server, and recompiles assets when they change
-gulp.task('default',['build', 'run'], function () {
+gulp.task('default',['build', 'watch', 'run'], function () {
   // Watch Sass
   gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
 

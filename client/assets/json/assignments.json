@@ -1,21 +1,22 @@
 [
   {
     "title": "Narrative Photography", 
+    "active": true,
     "dueDate": "Due: 08/19/15", 
     "contents": [
       "Please bring 5 pictures from your childhood that capture who you are, what you love, where you're from, and/or the people who have helped shape you.",
-      "Click on the arrows above to view specific criteria to consider when choosing your photographs.",
-      "Paragraph three", 
-      "Paragraph three" 
+      "Click on the arrows above to view complete assignment details.",
+      "", 
+      "" 
     ],
-    "location": "/homework/homework.pdf",
+    "location": "/homework/narrativePhotographyAssignment.pdf",
     "subjects": [
-        "history",
         "English"
       ]
   },
   {
     "title": "Letter to Your Future Self", 
+    "active": false,
     "dueDate": "06/31/15", 
     "contents": [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -27,6 +28,7 @@
   },
   {
     "title": "Solving for X", 
+    "active": false,
     "dueDate": "07/31/15", 
     "contents": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."
@@ -37,6 +39,7 @@
   }, 
   {
     "title": "Solving for X", 
+    "active": false,
     "dueDate": "07/31/15", 
     "contents": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."

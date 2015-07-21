@@ -40,7 +40,7 @@ $zurb-orange: #F08A24;
   background: $kmellum-blue;
   padding-left: 1rem;
   opacity: .75;
-  transition-property: opacity;
+  tion-property: opacity;
   transition-duration: .5s;
   transition-timing: ease-out;
   border-bottom: 1px solid white;
@@ -565,4 +565,62 @@ body{
 }
 p.assignmentParagraph{
   font-size: 115%;
+  }
+div.quiz-tab{
+  margin: .7rem .25rem !important;
+  background: #074A74;
+  opacity: .75;
+  height: 2.75rem;
+  width: 4.3rem;
+}
+.quizTabLink{
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+}
+.quizTabLink:hover{
+  color: $zurb-orange;
+}
+.quizContent{
+  font-family: 'Shadows Into Light', cursive;
+}
+.quizLink{
+  color: white;
+
+}
+.quizLink:hover{
+
+}
+.quizContent h1{
+  color: white;
+}
+.quizContent{
+  background: $kmellum-blue;
+  opacity: .9;
+  margin-top: -.5rem;
+  height: 50rem;
+}
+.tabs .tab-item{
+  background: #004876;
+  opacity: none;
+}
+.tabs .tab-item:hover{
+  background: $zurb-orange;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.tabs .tab-item.is-active:hover {
+  background: $zurb-orange;
+}
+.quizTabContainer{
+ max-width: none;
+ margin-top: -.5rem;
+}
+.quizContent img{
+  margin: 0px auto;
+}
+.quizContent p{
+  color: white;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  font-size: 150%;
 }

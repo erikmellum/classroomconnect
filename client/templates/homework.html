@@ -56,7 +56,7 @@ controller: HomeworkCtrl
     </div>  
   </zf-offcanvas>
     <div class="grid-block homeworkPostsContainer wrap">
-    <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments |filter:query" ng-if="containsSubject(assignment)">
+    <div class="grid-block small-12 medium-6 large-4" ng-repeat="assignment in assignments |filter:query" ng-if="containsSubject(assignment) && assignment.active">
       <div class="card homeworkCard">
         <div class="card-section assignmentContent">
           <h3>{{assignment.title}}</h3><h4>{{assignment.dueDate}}</h4>

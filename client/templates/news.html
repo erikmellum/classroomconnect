@@ -14,7 +14,7 @@ controller: NewsCtrl
         <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" class="pageButtons">Previous</button>
       </div>
       <div style="margin-top: .5rem;">
-  			<div class="card newsCard" ng-repeat="announcement in news | startFrom:currentPage*pageSize | limitTo:pageSize">
+  			<div class="card newsCard" ng-repeat="announcement in news | startFrom:currentPage*pageSize | limitTo:pageSize" ng-if="announcement.active">
           <div class="card-divider newsTitleHeader">
             <div class="newsTitle">
              {{announcement.title}}
@@ -22,7 +22,7 @@ controller: NewsCtrl
           </div>
           <div class="card-section cardSection">
             <h4>{{announcement.date}}</h4> 
-              <p>{{announcement.content}}</p>         
+              <p ng-repeat="paragraph in announcement.contents">{{paragraph}}</p>         
           </div>
         </div>
       </div> 

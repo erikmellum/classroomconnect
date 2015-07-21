@@ -1,17 +1,25 @@
 [
   {
-      "title": "Test to a New School Year",
-      "content": "Hello and welcome to the beginning of a new school year! My name is Mrs. Mellum and I'm very excited for",
-      "date": "August 17, 2015"
+      "title": "Welcome!",
+      "contents":[
+      "Greetings! Welcome to our classroom website, and to the beginning of a new school year! My name is Mrs. Mellum and I'm looking forward to getting to know you all!  I'm also VERY excited for this year becuase we have some great things planned. Orientation is August 17th, 2015 from __ to __.",
+      "This classroom website is a place where you can get information on assignments, classroom news, and more. This is also a REALLY great place to check out if you have been absent. I'll post all assignments and projects on the assignments page. Here on the news page I'll post weekly blurbs explaining what we'll be working on in the upcoming week. Think of it as a 'preview' for what we'll be working on. The forums are a place (primarly used during class time) where students can respond to prompts and have online discussions with their fellow classmates.",
+      "The quizzes section of website provides students with an opportunity to demonstrate their understanding during a particular unit or topic. The majority of the quiz questions will be short-answer with some occassional multiple choice questions. Stuents will take the quizzes during class time only and they will also be informed about quizzes in advance. In other words, there are no 'pop quizzes'. Lastly, the notes page is a place where students can gain access to valuable content. I'll often post links to my classroom presentations, resources, activity directions, and study guides on the notes page.",
+      "This first week will focus primarily on classroom procedures, expectations, and collaborative activities. We will also begin our unit on narratives (there's already an assignment posted in the 'Assignments' section). Narrative is another word for 'story.' Everyone has stories in their life, and the first few weeks we'll be working on perfecting our own personal narratives. Eventually we will use our own narratives as the inspiration for writing our own realistic fiction stories. We will also be studying the complicated expansion and demise of Ancient Rome."
+      ],
+      "date": "August 17, 2015",
+      "active": true
   },
   {
       "title": "Hooray!",
       "content": "Hello and welcome to the beginning of a new school year!",
-      "date": "August 17, 2015"
+      "date": "August 17, 2015",
+      "active": false
   },
   {
       "title": "Test",
       "content": "Hello and welcome to the beginning of a new school year!",
-      "date": "August 17, 2015"
+      "date": "August 17, 2015",
+      "active": false
   }
 ]

@@ -2,10 +2,10 @@
   {
     "accordion": [
       {
-        "accordionTitle": "Test1",
+        "accordionTitle": "Week 1",
         "contents":[
           {
-            "modalLinkTitle": "Some Awesome Link",
+            "notesLinkTitle": "Some Awesome Link",
             "subject": "Science",
             "unit": "1",
             "number": "1",

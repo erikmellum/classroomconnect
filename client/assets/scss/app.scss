@@ -18,12 +18,15 @@ $zurb-orange: #F08A24;
   color: #FFFFFF; 
   opacity: .98;
 }
+.topBar h4{
+  color: white;
+}
 .homeContent{
   margin-top: 1rem;
   background: #417597;
   padding: 1rem;
   color: white;
-  p, h4, h3, h2{
+  p, h4, h3, h2, h1{
     color: white;
   }
 }
@@ -142,6 +145,11 @@ body{
 }
 .homeworkLabel:hover{
 	opacity: .7;
+}
+.quizIcon img{
+  heigth: 3rem;
+  widdth: 3rem;
+
 }
 .downloadIconH{
   color: #F08A24;
@@ -415,6 +423,17 @@ body{
   font-size: 20px;
   padding-left: 5px;
 }
+.quizDescription img{
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-left: -.9rem;
+
+}
+.quizDescription p{
+  display:inline;
+  font-size: 20px;
+  padding-left: 5px;
+}
 .testButton{
   color: $kmellum-blue;
   transition-property: transform, color;
@@ -570,8 +589,17 @@ div.quiz-tab{
   margin: .7rem .25rem !important;
   background: #074A74;
   opacity: .75;
-  height: 2.75rem;
-  width: 4.3rem;
+  height: 2.69rem;
+  width: 5rem;
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.tabs .quiz-tab{
+  padding: .6rem;
+}
+.tab-contents{
+  margin-top: -1rem;
 }
 .quizTabLink{
   font-family: 'Shadows Into Light', cursive;
@@ -582,22 +610,35 @@ div.quiz-tab{
 }
 .quizContent{
   font-family: 'Shadows Into Light', cursive;
+  margin-left: -.75rem;
+  margin-top: -1rem;
 }
-.quizLink{
-  color: white;
 
-}
-.quizLink:hover{
-
-}
 .quizContent h1{
+  color: white;
+  text-align: left;
+  margin-left: .5rem;
+}
+.quizContent h2{
   color: white;
 }
 .quizContent{
   background: $kmellum-blue;
-  opacity: .9;
+  opacity: .79;
   margin-top: -.5rem;
-  height: 50rem;
+  height: 40rem;
+  overflow: auto;
+  text-align: left; 
+}
+.quizLink img{
+  height: 3.5rem;
+  width: 3.5rem;
+  transition: transform .3s ease-out;
+}
+
+.quizLink img:hover{
+  transform: scale(1.1);
+  
 }
 .tabs .tab-item{
   background: #004876;
@@ -615,12 +656,51 @@ div.quiz-tab{
  max-width: none;
  margin-top: -.5rem;
 }
-.quizContent img{
-  margin: 0px auto;
+.welcomeImage img{
+  height: 8rem;
+  width: 23rem;
+}
+.welcomeImage{
+  text-align: center;
 }
 .quizContent p{
   color: white;
   padding-left: 3rem;
-  padding-top: 1rem;
-  font-size: 150%;
+  font-size: 130%;
+  text-align: left;
+  margin-right: 1rem;
+}
+.usImage{
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  height: 20rem;
+  width: 16rem; 
+  float: left;
+  margin-right: .5rem;
+}
+.jessyeImage{
+  border: solid;
+  border-color: white;
+  borde-width: 2px;
+  width: 12rem;
+  height: 20rem;
+  float: left;
+  margin-right: .5rem;
+}
+.flumesImage{
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  float: right;
+  margin-left: .5rem;
+  height: 15rem;
+  width: 20rem;
+}
+.email-icon{
+  position: absolute;
+  top: 1rem;
+  right: 4.8rem;
+  color: white;
+  zoom: 200%;
 }

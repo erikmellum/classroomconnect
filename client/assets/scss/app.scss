@@ -431,6 +431,7 @@ body{
 }
 .quizDescription p{
   margin-top: .5rem;
+  text-align: left;
 }
 .testButton{
   color: $kmellum-blue;
@@ -604,15 +605,25 @@ div.quiz-tab{
   color: $zurb-orange;
 }
 .quizContentWelcome{
+  margin-top: -1.5rem;
   font-family: 'Shadows Into Light', cursive;
-  margin-left: -.75rem;
-  margin-top: -1rem;
+  margin-left: -1.5rem;
   overflow: auto;
+  background: $kmellum-blue;
+  opacity: .95;
+  height: 50rem;
+  width: 104%;
+  overflow: auto;
+  text-align: left;
+}
+.tabs{
+  margin-left: -.8rem;
 }
 .quizContent{
   font-family: 'Shadows Into Light', cursive;
-  margin-left: -.75rem;
-  margin-top: -.5rem;
+  margin-left: -1.5rem;
+  margin-top: -1.5rem;
+  width: 104%;
   overflow: auto;
 }
 .quiz-link-text:hover{
@@ -620,25 +631,16 @@ div.quiz-tab{
 }
 .quizContentWelcome h1{
   color: white;
-  text-align: left;
+  text-align: center;
   margin-left: .5rem;
 }
 .quizContent h1{
   color: white;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 .quizContentWelcome h2{
   color: white;
-}
-.quizContentWelcome{
-  background: $kmellum-blue;
-  opacity: .95;
-  margin-top: -.5rem;
-  height: 50rem;
-  overflow: auto;
-  text-align: left; 
 }
 .quizContent{
   background: $kmellum-blue;
@@ -704,29 +706,37 @@ div.quiz-tab{
  margin-top: -.5rem;
 }
 .welcomeImage img{
-  height: 8rem;
-  width: 23rem;
+  height: 10rem;
+  width: 35rem;
 }
 .welcomeImage{
   text-align: center;
+  margin-left: 1rem;
+}
+.welcomeImage h1{
+  text-align: left;
+
+}
+.welcomeImage h2{
+  text-align: center;
 }
 #welcomeImage2 img{
-  height: 15rem;
-  width: 25rem;
+  height: 20rem;
+  width: 20rem;
   border: solid;
   float: right;
-  border-width: 1px;
+  border-width: .25rem;
   border-color: $zurb-orange;
   opacity: none;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 .quizContentWelcome p{
   color: white;
   padding-left: 3rem;
-  font-size: 130%;
+  font-size: 110%;
   text-align: left;
+  margin-left: 3rem;
   margin-right: 1rem;
 }
 .quizContent p{

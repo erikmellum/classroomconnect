@@ -15,8 +15,8 @@
       ]
   },
   {
-    "title": "Engineering in Ancient Rome", 
-    "active": false,
+    "title": "Architecture in Ancient Rome", 
+    "active": true,
     "dueDate": "Due: TBD", 
     "contents": [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

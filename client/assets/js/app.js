@@ -18,7 +18,7 @@
   classroomConnect.controller('NavCtrl', ['$scope', '$http', function($scope, $http){
     $scope.selected = {};
    $scope.select= function(item) {
-     $scope.selected = item; 
+     $scope.selected = item;
    };
 
    $scope.isActive = function(item) {
@@ -43,7 +43,7 @@
     $scope.pageSize = 5;
 
     $scope.numberOfPages=function(){
-        return Math.ceil($scope.news.length/$scope.pageSize);                
+        return Math.ceil($scope.news.length/$scope.pageSize);
     }
 
   }]);
@@ -77,9 +77,11 @@
       checkWindowSize();
     });
     function checkWindowSize() {
-
-      if ( $window.innerWidth < 640 ) {
-          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'1px'});
+      if ( $window.innerWidth < 400 ) {
+          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'1px', 'font-size':'80%', 'position':'relative', 'right':'1.5rem'});
+      }
+      else if ( $window.innerWidth < 640 ) {
+          angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'1px', 'font-size':'80%', 'position':'relative', 'right':'1rem'});
       }
       else if ( $window.innerWidth < 900 ) {
           angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'8px'});
@@ -110,11 +112,15 @@
       $scope.assignments=data;
     });
 
-    
+
   }]);
   classroomConnect.controller('NotesCtrl', ['$scope', '$http', function($scope, $http){
     $scope.weeks=[];
-
+    $scope.tabs=[1, 2];
+    $scope.currentWeek=0;
+    $scope.setWeek=function(week){
+      $scope.currentWeek=week;
+    }
     $http.get('assets/json/notes.json').success(function(data){
       $scope.weeks=data;
     });

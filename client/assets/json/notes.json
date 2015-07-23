@@ -1,184 +1,259 @@
 [
   {
-    "accordion": [
+    "notes": [
       {
-        "accordionTitle": "Week 1",
-        "contents":[
+        "notesLinkTitle": "Some Awesome Link 1",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
           {
-            "notesLinkTitle": "Some Awesome Link",
-            "subject": "Science",
-            "unit": "1",
-            "number": "1",
-            "img": "img/electrochemicalReaction.png",
-            "title": "Super awesome science",
-            "paragraphs": [
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              }
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
 
-            ],
-            "icons": [
-              {
-                "class": "someclass",
-                "links": [
-                  {
-                    "href": "youtube.com",
-                    "title": "click this to see a video on the activity"
-                  }
-                ]
-              }
-            ]
-          },
+        ],
+        "icons": [
           {
-            "modalLinkTitle": "Some Awesome Link 2",
-            "subject": "Math",
-            "unit": "1",
-            "number": "1",
-            "img": "img/electrochemicalReaction.png",
-            "title": "Super awesome math",
-            "paragraphs": [
+            "class": "someclass",
+            "links": [
               {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              }
-            ],
-            "icons": [
-              {
-                "class": "someclass",
-                "links": [
-                  {
-                    "href": "somelink",
-                    "title": "someTitle"
-                  }
-                ]
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
               }
             ]
           }
         ]
       },
       {
-        "accordionTitle": "Test2",
-        "contents":[
+        "notesLinkTitle": "Some Awesome Link 2",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
           {
-            "modalLinkTitle": "Some Awesome Link 3",
-            "subject": "English",
-            "unit": "1",
-            "number": "1",
-            "img": "img/electrochemicalReaction.png",
-            "title": "Super awesome English",
-            "paragraphs": [
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              }
-            ],
-            "icons": [
-              {
-                "class": "someclass",
-                "links": [
-                  {
-                    "href": "somelink",
-                    "title": "someTitle"
-                  }
-                ]
-              }
-            ]
+            "content": "Some paragraph"
           },
           {
-            "modalLinkTitle": "Some Awesome Link 4",
-            "subject": "history",
-            "unit": "1",
-            "number": "1",
-            "img": "img/electrochemicalReaction.png",
-            "title": "Super awesome history",
-            "paragraphs": [
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
               {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              }
-            ],
-            "icons": [
-              {
-                "class": "someclass",
-                "links": [
-                  {
-                    "href": "somelink",
-                    "title": "someTitle"
-                  }
-                ]
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
               }
             ]
           }
         ]
-      },
+      }
+      ,
       {
-        "accordionTitle": "Test3"
+        "notesLinkTitle": "Some Awesome Link 3",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
+              {
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
+              }
+            ]
+          }
+        ]
+      }
+      ,{
+        "notesLinkTitle": "Some Awesome Link 4",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
+              {
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   {
-    "accordion": [
+    "notes": [
       {
-        "accordionTitle": "Youtube",
-        "contents":[
+        "notesLinkTitle": "Some Terrible Link 1",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
           {
-            "modalLinkTitle": "Some Awesome Link",
-            "subject": "Science",
-            "unit": "1",
-            "number": "1",
-            "img": "img/electrochemicalReaction.png",
-            "title": "Super awesome science",
-            "paragraphs": [
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
               {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              },
-              {
-                "content": "Some paragraph"
-              }
-            ],
-            "icons": [
-              {
-                "class": "fa-youtube-play",
-                "links": [
-                  {
-                    "href": "http://youtube.com",
-                    "title": "youtube"
-                  }
-                ]
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
               }
             ]
           }
         ]
       },
       {
-        "accordionTitle": "Test2"
-      },
+        "notesLinkTitle": "Some Terrible Link 2",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
+              {
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
+              }
+            ]
+          }
+        ]
+      }
+      ,
       {
-        "accordionTitle": "Test3"
+        "notesLinkTitle": "Some Terrible Link 3",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
+              {
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
+              }
+            ]
+          }
+        ]
+      }
+      ,{
+        "notesLinkTitle": "Some Terrible Link 4",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "img/electrochemicalReaction.png",
+        "title": "Super awesome science",
+        "paragraphs": [
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          },
+          {
+            "content": "Some paragraph"
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "someclass",
+            "links": [
+              {
+                "href": "youtube.com",
+                "title": "click this to see a video on the activity"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

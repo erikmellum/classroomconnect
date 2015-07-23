@@ -15,7 +15,7 @@ $zurb-orange: #F08A24;
 }
 .side-nav li a:active{
   background: $kmellum-blue;
-  color: #FFFFFF; 
+  color: #FFFFFF;
   opacity: .98;
 }
 .topBar h4{
@@ -167,9 +167,9 @@ body{
 }
 .downloadIconA{
   color: #F08A24;
-	position: absolute; 
-	top: 1.5rem; 
-	right: 1.5rem; 
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
   zoom: 200%;
   transition-property: transform;
   transition-duration: .5s;
@@ -215,7 +215,7 @@ body{
   color: #CC7A29;
 }
 .assignmentSearchIcon{
-  margin-top: .5rem; 
+  margin-top: .5rem;
   color: $kmellum-blue;
   opacity: .75;
   cursor: pointer;
@@ -296,20 +296,20 @@ body{
 }
 .is-active > .accordion-title{
     background: $kmellum-blue;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     opacity: .98;
     }
 .accordion-content{
   background: #FFFFFF;
   opacity: .9;
-  padding: 1rem; 
+  padding: 1rem;
   }
 .accordion-content p{
   font-size: 18px;
 }
-  .is-active > .accordion-content 
+  .is-active > .accordion-content
   {
-    display: block; 
+    display: block;
     }
 
 .notesInfoIcon{
@@ -444,7 +444,7 @@ body{
 
 }
 .modal{
-    max-width: 800px; 
+    max-width: 800px;
     overflow: auto;
     opacity: .9;
 }
@@ -508,10 +508,10 @@ body{
   font-size: 27px;
 }
 .subListNotesIconList{
-  list-style-type: none; 
-  right: .5rem; 
+  list-style-type: none;
+  right: .5rem;
   position: relative;
-}  
+}
 .subListNotesIconList li a h4{
   transition: all .5s ease-in-out;
 
@@ -647,7 +647,7 @@ div.quiz-tab{
   opacity: .95;
   height: 50rem;
   overflow: auto;
-  text-align: left; 
+  text-align: left;
 }
 .quizLink img{
   margin-top: -1.2rem;
@@ -672,7 +672,7 @@ div.quiz-tab{
 .quizContentWelcome a{
   transition-property: font-size;
   transition-duration: .5s;
-  
+
 }
 .quizContentWelcome a:hover, a:focus{
   transform: scale(1.1);
@@ -682,7 +682,7 @@ div.quiz-tab{
 .quizContent a{
   transition-property: font-size;
   transition-duration: .5s;
-  
+
 }
 .quizContent a:hover, a:focus{
   transform: scale(1.1);
@@ -756,7 +756,7 @@ div.quiz-tab{
   border-color: white;
   border-width: 2px;
   height: 20rem;
-  width: 16rem; 
+  width: 16rem;
   float: left;
   margin-right: .5rem;
 }
@@ -778,10 +778,42 @@ div.quiz-tab{
   height: 15rem;
   width: 20rem;
 }
-.email-icon{
-  position: absolute;
-  top: 1rem;
-  right: 4.8rem;
+.sticky-menu-item{
+  padding: 0 2rem;
+}
+.notes-tab{
+  position: relative;
+  width: 80px;
+  padding: .4rem;
+  cursor: pointer;
+  transition: background .4s ease-out;
+  text-align: center;
+  height: 40px;
+  vertical-align: center;
+  margin: .5rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 180%;
+  background: $kmellum-blue;
+  opacity: .7;
   color: white;
-  zoom: 200%;
+}
+.notes-tab:hover{
+  opacity: .9;
+}
+.notes-tab:active{
+  opacity: 1;
+}
+#stickyFooter{
+	position: fixed;
+	bottom: 0;
+  height: 40px;
+	border-top: 1px solid #e4e7ee;
+	width: 100%;
+	background: $kmellum-blue !important;
+  opacity: .7;
+  h3{
+    padding-left: 2rem;
+  }
+
 }

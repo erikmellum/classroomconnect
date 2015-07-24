@@ -2,125 +2,31 @@
   {
     "notes": [
       {
-        "notesLinkTitle": "Some Awesome Link 1",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
+        "notesLinkTitle": "Click to learn about the notes page.",
+        "subject": "N/A",
+        "unit": "N/A",
+        "number": "N/A",
+        "img": "img/needHelp.png",
+        "title": "This is where I will post notes, handouts, study guides, and other awesome resources.",
         "paragraphs": [
           {
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+            "content": ""
           },
           {
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+            "content": ""
           },
           {
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+            "content": ""
           }
 
         ],
         "icons": [
           {
-            "class": "someclass",
+            "class": "",
             "links": [
               {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "notesLinkTitle": "Some Awesome Link 2",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      }
-      ,
-      {
-        "notesLinkTitle": "Some Awesome Link 3",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      }
-      ,{
-        "notesLinkTitle": "Some Awesome Link 4",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
+                "href": "",
+                "title": ""
               }
             ]
           }
@@ -131,125 +37,31 @@
   {
     "notes": [
       {
-        "notesLinkTitle": "Some Terrible Link 1",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
+        "notesLinkTitle": "More to come",
+        "subject": "",
+        "unit": "",
+        "number": "",
+        "img": "",
+        "title": "More to come!",
         "paragraphs": [
           {
-            "content": "Some paragraph"
+            "content": ""
           },
           {
-            "content": "Some paragraph"
+            "content": ""
           },
           {
-            "content": "Some paragraph"
+            "content": ""
           }
 
         ],
         "icons": [
           {
-            "class": "someclass",
+            "class": "mars-double",
             "links": [
               {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "notesLinkTitle": "Some Terrible Link 2",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      }
-      ,
-      {
-        "notesLinkTitle": "Some Terrible Link 3",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
-              }
-            ]
-          }
-        ]
-      }
-      ,{
-        "notesLinkTitle": "Some Terrible Link 4",
-        "subject": "Science",
-        "unit": "1",
-        "number": "1",
-        "img": "img/electrochemicalReaction.png",
-        "title": "Super awesome science",
-        "paragraphs": [
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          },
-          {
-            "content": "Some paragraph"
-          }
-
-        ],
-        "icons": [
-          {
-            "class": "someclass",
-            "links": [
-              {
-                "href": "youtube.com",
-                "title": "click this to see a video on the activity"
+                "href": "http://yahoo.com",
+                "title": "Much yahoo"
               }
             ]
           }

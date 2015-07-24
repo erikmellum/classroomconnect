@@ -462,6 +462,7 @@ body{
 .modalContent h4{
   color:#FFFFFF;
   font-size: 26px;
+  text-align: left;
 }
 .modalCloseButton{
   font-size: 50px;
@@ -486,12 +487,7 @@ body{
 }
 
 .lessonImage1{
-  height: 300px;
-  width: 400px;
-  float: right;
   margin-left: 5px;
-  border: solid;
-  border-color: #FFFFFF;
 }
 .actionSheetContent a{
   color: #FFFFFF;
@@ -585,18 +581,21 @@ p.assignmentParagraph{
   font-size: 115%;
   }
 div.quiz-tab{
-  margin: .7rem .25rem !important;
+  margin-left: 1rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
   background: #074A74;
   opacity: .75;
-  height: 2.69rem;
-  width: 5rem;
+  height: 40px;
+  padding: .5rem;
+  width: 80px;
   font-size: 150%;
   border-radius: 5px;
+  font-size: 180%;
   text-align: center;
-  margin-bottom: 5rem;
 }
 .tabs .quiz-tab{
-  padding: .6rem;
+  padding: .4rem;
 }
 .quizTabLink{
   font-family: 'Shadows Into Light', cursive;
@@ -612,6 +611,9 @@ div.quiz-tab{
   overflow: auto;
   background: $kmellum-blue;
   opacity: .95;
+  border:solid;
+  border-radius: 5px;
+  border-color: $kmellum-blue;
   height: 50rem;
   width: 104%;
   overflow: auto;
@@ -621,6 +623,9 @@ div.quiz-tab{
   margin-left: -.8rem;
 }
 .quizContent{
+  border:solid;
+  border-radius: 5px;
+  border-color: $kmellum-blue;
   font-family: 'Shadows Into Light', cursive;
   margin-left: -1.5rem;
   margin-top: -1.5rem;
@@ -834,14 +839,11 @@ a {
     font-size: 103%;
 }
 .notesBox{
-  border: solid;
-  border-width: 2px;
-  border-color: #3F7598;
-  margin-left: 0rem !important;
+  margin-right: 5rem;
+  border-bottom-left-radius: 0;  margin-left: 0rem !important;
   margin-bottom: calc(37px + .5rem); 
   text-align: center;
-  background: white;
-  opacity: .9;
+  opacity: 1;
 }
 .notesDownloadButton{
   margin-top: .5rem;
@@ -857,27 +859,37 @@ li.notes-item{
   border-top: none;
 }
 .notes-link-title{
-  color: black;
+  border: solid;
+  border-color: $kmellum-blue;
+  border-width: 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 30px;
   trasition-property: opacity, color, background;
   transition-duration: .3s;
   transition-timing: ease-out;
 }
 a.notes-link-title:hover{
+  color: white !important;
+  background: #4C7E9E !important;
+}
+a.notes-link-title{
   color: $zurb-orange !important;
-  background: $kmellum-blue !important;
-  opacity: .7;
 }
 section.notes-container, ul.notes-list{
   margin-bottom: 0rem;
 }
 .notes-modal{
-position: relative; 
-left: 0rem;
-top: 0rem;
-background: none !important;
+  position: relative; 
+  left: 0rem;
+  top: 0rem;
+  background: none !important;
 }
 .modal{
 }
 .notes-header{
   margin-left: 0rem !important;
+}
+.notesPage{
+  margin: 0;
 }

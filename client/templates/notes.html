@@ -7,7 +7,7 @@ controller: NotesCtrl
 
 ---
 <div class="grid-content">
-	<div class="grid-container">
+	<div class="grid-container notesPage">
 		<div class="grid-block small-12 notes-header">
 			<div ng-repeat="tab in tabs" ng-click="setWeek($index)" class="notes-tab">
 				Week {{$index+1}}
@@ -29,8 +29,10 @@ controller: NotesCtrl
 								<br>
 							</h4>
 			      	<img ng-src="{{content.img}}" class="lessonImage1">
-			      	<h3>{{content.title}}</h3>
+			      	<h3>{{content.title}}</h3><br>
 			      	<p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
+			      	
+			      <!--
 			      	<ul class="menu-bar noteIcons" ng-repeat="icon in content.icons">
 			        	<li style="width: 25%;">
 			          	<i class="noteIcon activityIcon fa {{icon.class}} fa-3x"></i>
@@ -39,7 +41,7 @@ controller: NotesCtrl
 			          	</ul>
 			        	</li>
 			      	</ul>
-			    	</div>
+			    	</div>-->
 			  	</div>
 					</li>
 					</ul>

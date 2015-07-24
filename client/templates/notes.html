@@ -8,19 +8,19 @@ controller: NotesCtrl
 ---
 <div class="grid-content">
 	<div class="grid-container">
-		<div class="grid-block small-12">
+		<div class="grid-block small-12 notes-header">
 			<div ng-repeat="tab in tabs" ng-click="setWeek($index)" class="notes-tab">
 				Week {{$index+1}}
 			</div>
 		</div>
-		<div class="grid-block small-12">
+		<div class="grid-block small-12 notesBox">
   		<div class="grid-content" ng-repeat="week in weeks" ng-if="currentWeek==$index">
-				<section  class="block-list">
-					<ul>
-					<li ng-repeat="content in week.notes">
+				<section class="block-list notes-container">
+					<ul class="notes-list">
+					<li ng-repeat="content in week.notes" class="notes-item">
 		  		<i class="downloadIconN fa fa-pencil notesDownloadButton" zf-open="basicModalNotes{{$index}}" ></i>
-		  		<a zf-open="basicModalNotes{{$index}}" style="color: black;">{{content.notesLinkTitle}}</a>
-					<div zf-modal="" id="basicModalNotes{{$index}}">
+		  		<a zf-toggle="basicModalNotes{{$index}}" class="notes-link-title">{{content.notesLinkTitle}}</a>
+					<div zf-modal="" id="basicModalNotes{{$index}}" class="notes-modal">
 			    	<a zf-close="basicModalNotes{{$parent.$index}}" class="close-button modalCloseButton">×</a>
 			    	<div class="modalContent">
 			      	<h4>Subject: {{content.subject}}

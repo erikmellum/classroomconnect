@@ -85,8 +85,11 @@
       }
       else if ( $window.innerWidth < 900 ) {
           angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'8px'});
+          angular.element(document.querySelector('div.notes-box')).css({'margin-left':'3rem'});
       }
       else {
+          angular.element(document.querySelector('div.notes-box')).css({'margin-left':'0rem'});
+
           angular.element(document.querySelector('.topHeader')).css({'letter-spacing':'15px'});
       }
 

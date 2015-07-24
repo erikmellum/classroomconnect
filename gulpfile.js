@@ -22,6 +22,7 @@ var isProduction = !!(argv.production);
 var paths = {
   assets: [
     './client/**/*.*',
+    './client/assets/json/*.json',
     '!./client/templates/**/*.*',
     '!./client/assets/{scss,js}/**/*.*'
   ],
@@ -153,7 +154,6 @@ gulp.task('build', function(cb) {
 
 
 gulp.task('run', ['build'], function() {
-  return run('cd ./build && python -m SimpleHTTPServer 8001').exec();
 });
 
 gulp.task('watch', [], function(){
@@ -171,16 +171,6 @@ gulp.task('watch', [], function(){
 });
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
-gulp.task('default',['build', 'watch', 'run'], function () {
-  // Watch Sass
-  gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass']);
-
-  // Watch JavaScript
-  gulp.watch(['./client/assets/js/**/*', './js/**/*'], ['uglify:app']);
-
-  // Watch static files
-  gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);
-
-  // Watch app templates
-  gulp.watch(['./client/templates/**/*.html'], ['copy:templates']);
+gulp.task('default',['build', 'watch'], function () {
+  run('cd ./build && python -m SimpleHTTPServer 8001').exec();
 });

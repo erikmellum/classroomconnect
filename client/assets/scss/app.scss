@@ -224,6 +224,11 @@ body{
   transition-duration: .5s;
   transition-timing: ease-out;
 }
+.weeklyPoll{
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
 .reminderBox h4{
   font-size: 30px;
 }
@@ -231,6 +236,9 @@ body{
   width: 200px;
   font-size: 20px;
   font-family: 'Shadows Into Light', cursive;
+}
+.reminder h4{
+  font-size: 155%;
 }
 .canvasExitButton{
   font-size: 40px;
@@ -426,12 +434,15 @@ body{
   font-size: 20px;
   padding-left: 5px;
 }
-.quizDescription{
+.quizDescription2 img{
+  float: left;
+  margin-left: -.75rem;
+  height: 25%;
+  width: 25%;
   color: white;
 }
-.quizDescription p{
-  margin-top: .5rem;
-  text-align: left;
+.quizDescription2 p{
+  padding-top: .8rem;
 }
 .testButton{
   color: $kmellum-blue;
@@ -642,8 +653,9 @@ div.quiz-tab{
 }
 .quizContent h1{
   color: white;
-  text-align: center;
+  text-align: left;
   margin-top: 3rem;
+  margin-left: 1rem;
 }
 .quizContentWelcome h2{
   color: white;
@@ -656,10 +668,10 @@ div.quiz-tab{
   text-align: left;
 }
 .quizLink img{
-  margin-top: -1.2rem;
+  margin-top: -.5rem;
   float: left;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   transition: transform .3s ease-out;
 }
 .quiz-link-text:hover{
@@ -836,7 +848,6 @@ a {
 }
 .stickyFooterHeader a:hover{
     color: $zurb-orange;
-    font-size: 103%;
 }
 .notesBox{
   margin-right: 5rem;

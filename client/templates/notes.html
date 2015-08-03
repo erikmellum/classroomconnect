@@ -18,20 +18,18 @@ controller: NotesCtrl
 				<section class="block-list notes-container">
 					<ul class="notes-list">
 					<li ng-repeat="content in week.notes" class="notes-item">
-		  		<i class="downloadIconN fa fa-pencil notesDownloadButton" zf-open="basicModalNotes{{$index}}" ></i>
 		  		<a zf-toggle="basicModalNotes{{$index}}" class="notes-link-title">{{content.notesLinkTitle}}</a>
 					<div zf-modal="" id="basicModalNotes{{$index}}" class="notes-modal">
 			    	<a zf-close="basicModalNotes{{$parent.$index}}" class="close-button modalCloseButton">×</a>
 			    	<div class="modalContent">
-			      	<h4>Subject: {{content.subject}}
-								<br>Unit: {{content.unit}}
+			      	<!--<h4>Subject: {{content.subject}}
+							 <br>Unit: {{content.unit}}
 								<br>#: {{content.number}}
-								<br>
+								<br>-->
 							</h4>
 			      	<img ng-src="{{content.img}}" class="lessonImage1">
 			      	<h3>{{content.title}}</h3><br>
 			      	<p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
-			      	
 			      <!--
 			      	<ul class="menu-bar noteIcons" ng-repeat="icon in content.icons">
 			        	<li style="width: 25%;">
@@ -45,9 +43,8 @@ controller: NotesCtrl
 			  	</div>
 					</li>
 					</ul>
-				</section>
+				</section><br>
 			</div>
-
 		</div>
 	</div>
 </div>

@@ -336,19 +336,6 @@ body{
 .notesInfoPopup{
   font-size: 50px;
 }
-.downloadIconN{
-  color: #F08A24;
-  float: left;
-  padding-right: 1rem;
-  zoom: 150%;
-  transition-property: transform, color;
-  transition-duration: .3s;
-  transition-timing: ease-in-out;
-  }
-.downloadIconN:hover{
-  color: $kmellum-blue;
-  opacity: .98;
-}
 .activeLink{
   background: #00548a;
 }
@@ -444,6 +431,7 @@ body{
 .quizDescription2 p{
   padding-top: .8rem;
 }
+
 .testButton{
   color: $kmellum-blue;
   transition-property: transform, color;
@@ -455,20 +443,25 @@ body{
 
 }
 .modal{
-    max-width: 800px;
+    margin-top: -1rem;
+    max-width: 80%;
+    margin-bottom: 1rem;
+    max-height: 300px;
     overflow: auto;
     opacity: .9;
 }
 .modalContent p{
   color: #FFFFFF;
   font-size: 20px;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 .modal h3{
   color: #FFFFFF;
 }
 .modalContent h3{
-  font-size: 50px;
-  text-align: center;
+  font-size: 30px;
+  text-align: left;
 }
 .modalContent h4{
   color:#FFFFFF;
@@ -527,7 +520,6 @@ body{
   color: $zurb-orange;
   transform: scale(1.1);
 }
-
 .pageButtons{
   float: right;
 }
@@ -574,9 +566,6 @@ body{
   display: inline-block;
   float: right;
   margin-top: 1rem;
-}
-.homeworkPostsContainer{
-
 }
 .pageHeader{
   width: 98%;
@@ -648,8 +637,10 @@ div.quiz-tab{
 }
 .quizContentWelcome h1{
   color: white;
-  text-align: center;
-  margin-left: .5rem;
+  text-align: left;
+}
+.belowWelcome{
+  margin-left: 1rem;
 }
 .quizContent h1{
   color: white;
@@ -700,7 +691,6 @@ div.quiz-tab{
 .quizContent a{
   transition-property: font-size;
   transition-duration: .5s;
-
 }
 .quizContent a:hover, a:focus{
   transform: scale(1.1);
@@ -856,9 +846,14 @@ a {
   text-align: center;
   opacity: 1;
 }
+
 .notesDownloadButton{
+  position: absolute;
+  margin-left: 5rem;
   margin-top: .5rem;
-  float: right;
+}
+.basicModalNotes{
+  padding-bottom: 5rem;
 }
 .basicModalNotes:hover{
   color: $zurb-orange;
@@ -870,22 +865,25 @@ li.notes-item{
   border-top: none;
 }
 .notes-link-title{
+  background: #417597;
+  opacity: .90;
+  width: 80%;
   border: solid;
+  margin: 0px auto;
+  margin-bottom: 1rem;
   border-color: $kmellum-blue;
   border-width: 2px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 30px;
+  border-radius: 5px;
   trasition-property: opacity, color, background;
   transition-duration: .3s;
   transition-timing: ease-out;
 }
 a.notes-link-title:hover{
   color: white !important;
-  background: #4C7E9E !important;
+  background: $kmellum-blue !important;
 }
 a.notes-link-title{
-  color: $zurb-orange !important;
+  color: white !important;
 }
 section.notes-container, ul.notes-list{
   margin-bottom: 0rem;

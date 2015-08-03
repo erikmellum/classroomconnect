@@ -30,16 +30,19 @@ controller: NotesCtrl
 			      	<img ng-src="{{content.img}}" class="lessonImage1">
 			      	<h3>{{content.title}}</h3><br>
 			      	<p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
-			      <!--
-			      	<ul class="menu-bar noteIcons" ng-repeat="icon in content.icons">
-			        	<li style="width: 25%;">
-			          	<i class="noteIcon activityIcon fa {{icon.class}} fa-3x"></i>
-			          	<ul class="subListNotesIconList" ng-repeat="link in icon.links">
-			            	<li><a href="{{link.href}}" target="_blank"><h4>{{link.title}}</h4></a></li>
+			      	<div ng-repeat="icon in content.icons">
+			          <ul class="subListNotesIconList" ng-repeat="link in icon.links">
+			            	<li>
+			            		<h4>
+				            		<a href="{{link.href}}" target="_blank">
+				            			<i class="noteIcon activityIcon fa {{icon.class}}"></i>
+				            			{{link.title}}
+				            		</a>
+			            		</h4>
+		            		</li>
 			          	</ul>
-			        	</li>
-			      	</ul>
-			    	</div>-->
+			      	</div>
+		    	</div>
 			  	</div>
 					</li>
 					</ul>

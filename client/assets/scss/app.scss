@@ -509,6 +509,9 @@ body{
 }
 .subListNotesIconList{
   list-style-type: none;
+  li{
+    border-bottom: none;
+  }
   right: .5rem;
   position: relative;
 }

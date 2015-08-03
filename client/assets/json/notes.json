@@ -22,11 +22,20 @@
         ],
         "icons": [
           {
-            "class": "",
+            "class": "fa-puzzle-piece",
             "links": [
               {
-                "href": "",
-                "title": ""
+                "href": "http://youtube.com",
+                "title": "Click here to go to youtube!"
+              }
+            ]
+          },
+          {
+            "class": "fa-question-circle",
+            "links": [
+              {
+                "href": "http://google.com",
+                "title": "Click here to go to google! (could do anything though)"
               }
             ]
           }

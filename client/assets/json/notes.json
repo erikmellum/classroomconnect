@@ -10,7 +10,7 @@
         "title": "Cell Structure & Function",
         "paragraphs": [
           {
-            "content": "Testing one two"
+            "content": ""
           },
           {
             "content": ""
@@ -22,20 +22,20 @@
         ],
         "icons": [
           {
-            "class": "fa-puzzle-piece",
+            "class": "fa-laptop",
             "links": [
               {
-                "href": "http://youtube.com",
-                "title": "Click here to go to youtube!"
+                "href": "https://docs.google.com/presentation/d/1QZcpAbcnWy0f-wO_y_9z7F9TTBPM9_hi3i2Jv6VHf4A/edit?usp=sharing",
+                "title": "Intro to Cell Theory"
               }
             ]
           },
           {
-            "class": "fa-question-circle",
+            "class": "fa-laptop",
             "links": [
               {
-                "href": "http://google.com",
-                "title": "Click here to go to google! (could do anything though)"
+                "href": "https://docs.google.com/presentation/d/1ZFqZ-fr022ra06j75ovZkPl5cTRSi-weHumBNe5vsEg/edit?usp=sharing",
+                "title": "Types of Cells (Eukaryotic & Prokaryotic Cells)"
               }
             ]
           }

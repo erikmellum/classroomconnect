@@ -28,20 +28,20 @@ controller: NotesCtrl
 								<br>-->
 							</h4>
 			      	<img ng-src="{{content.img}}" class="lessonImage1">
-			      	<h3>{{content.title}}</h3><br>
-			      	<p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
-			      	<div ng-repeat="icon in content.icons">
-			          <ul class="subListNotesIconList" ng-repeat="link in icon.links">
+			      	<h3>{{content.title}}</h3>
+			      		<div ng-repeat="icon in content.icons">
+			          	<ul class="subListNotesIconList" ng-repeat="link in icon.links">
 			            	<li>
 			            		<h4>
-				            		<a href="{{link.href}}" target="_blank">
-				            			<i class="noteIcon activityIcon fa {{icon.class}}"></i>
+				            		<a href class="presentationLink"="{{link.href}}" target="_blank">
+				            			<i class="laptopIcon noteIcon activityIcon fa {{icon.class}}"></i>
 				            			{{link.title}}
 				            		</a>
 			            		</h4>
 		            		</li>
 			          	</ul>
-			      	</div>
+			      		</div>
+			      	<p ng-repeat="paragraph in content.paragraphs">{{paragraph.content}}</p>
 		    	</div>
 			  	</div>
 					</li>

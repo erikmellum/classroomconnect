@@ -283,43 +283,6 @@ body{
       color: #FFFFFF;
       opacity: .98;
 }
-.accordion{
-  width: 50rem;
-}
-.accordionContents{
-  height: 40px;
-}
-.accordion-title{
-  text-align: center;
-  background: $kmellum-blue;
-  opacity: .75;
-  color: #FFF;
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
-  font-size: 150%;
-}
-.accordion-title:hover{
-  background: $kmellum-blue;
-  opacity: .98;
-}
-.is-active > .accordion-title{
-    background: $kmellum-blue;
-    color: #FFFFFF;
-    opacity: .98;
-    }
-.accordion-content{
-  background: #FFFFFF;
-  opacity: .9;
-  padding: 1rem;
-  }
-.accordion-content p{
-  font-size: 18px;
-}
-  .is-active > .accordion-content
-  {
-    display: block;
-    }
-
 .notesInfoIcon{
   float: right;
   color: #004876;
@@ -440,9 +403,9 @@ body{
 }
 .testButton:hover{
   color: $zurb-orange;
-
-}
+} 
 .modal{
+    border-radius: 5px;
     margin-top: -1rem;
     max-width: 80%;
     margin-bottom: 1rem;
@@ -451,10 +414,10 @@ body{
     opacity: .9;
 }
 .modalContent p{
+  text-align: left;
   color: #FFFFFF;
   font-size: 20px;
   font-family: 'Shadows Into Light', cursive;
-
 }
 .modal h3{
   color: #FFFFFF;
@@ -464,8 +427,9 @@ body{
   text-align: left;
 }
 .modalContent h4{
+  font-family: 'Shadows Into Light', cursive;
   color:#FFFFFF;
-  font-size: 26px;
+  font-size: 20px;
   text-align: left;
 }
 .modalCloseButton{
@@ -868,6 +832,8 @@ li.notes-item{
   border-top: none;
 }
 .notes-link-title{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
   background: #417597;
   opacity: .90;
   width: 80%;
@@ -904,4 +870,12 @@ section.notes-container, ul.notes-list{
 }
 .notesPage{
   margin: 0;
+}
+.presentationLink{
+  trasition-property: transform,color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.presentationLink:hover{
+  color: $zurb-orange;
 }

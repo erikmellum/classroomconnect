@@ -42,12 +42,12 @@
         ]
       },
       {
-        "notesLinkTitle": "Test",
+        "notesLinkTitle": "More to come",
         "subject": "Science",
         "unit": "1",
         "number": "1",
-        "img": "img/needHelp.png",
-        "title": "Cell Theory & Types of Cells",
+        "img": "",
+        "title": "",
         "paragraphs": [
           {
             "content": ""
@@ -101,7 +101,7 @@
             "links": [
               {
                 "href": "http://yahoo.com",
-                "title": "Much yahoo"
+                "title": "More to come"
               }
             ]
           }

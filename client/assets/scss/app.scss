@@ -837,6 +837,7 @@ li.notes-item{
   background: #417597;
   opacity: .90;
   width: 80%;
+  height: 55px;
   border: solid;
   margin: 0px auto;
   margin-bottom: 1rem;
@@ -873,7 +874,7 @@ section.notes-container, ul.notes-list{
 }
 .presentationLink{
   trasition-property: transform,color;
-  transition-duration: .5s;
+  transition-duration: s;
   transition-timing: ease-out;
 }
 .presentationLink:hover{

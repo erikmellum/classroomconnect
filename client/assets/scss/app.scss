@@ -405,7 +405,7 @@ body{
   color: $zurb-orange;
 } 
 .modal{
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
     margin-top: -1rem;
     max-width: 80%;
     margin-bottom: 1rem;
@@ -625,6 +625,17 @@ div.quiz-tab{
   overflow: auto;
   text-align: left;
 }
+.notes-link-text:hover{
+  color: $zurb-orange;
+}
+.notes-link-text{
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing: ease-out;
+}
+.laptopIcon:hover{
+  transform: scale(1.1);
+}
 .quizLink img{
   margin-top: -.5rem;
   float: left;
@@ -702,6 +713,17 @@ div.quiz-tab{
   float: right;
   border-width: .25rem;
   border-color: $zurb-orange;
+  opacity: none;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+#welcomeImage3 img{
+  height: 20rem;
+  width: 24rem;
+  border: solid;
+  float: right;
+  border-width: .25rem;
+  border-color: white;
   opacity: none;
   margin-top: 1.5rem;
   margin-right: 1.5rem;
@@ -842,8 +864,8 @@ li.notes-item{
   margin: 0px auto;
   margin-bottom: 1rem;
   border-color: $kmellum-blue;
-  border-width: 2px;
-  border-radius: 5px;
+  border-width: 2px;  
+  border-radius: 5px 5px 0px 0px;
   trasition-property: opacity, color, background;
   transition-duration: .3s;
   transition-timing: ease-out;
@@ -864,6 +886,10 @@ section.notes-container, ul.notes-list{
   top: 0rem;
   background: none !important;
 }
+.notes-modal aside{
+    max-height: 25rem;
+
+}
 .modal{
 }
 .notes-header{
@@ -873,10 +899,11 @@ section.notes-container, ul.notes-list{
   margin: 0;
 }
 .presentationLink{
-  trasition-property: transform,color;
-  transition-duration: s;
+  trasition-property: color;
+  transition-duration: .3s;
   transition-timing: ease-out;
 }
 .presentationLink:hover{
   color: $zurb-orange;
+
 }

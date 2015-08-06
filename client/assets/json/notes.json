@@ -8,6 +8,14 @@
         "number": "1",
         "img": "",
         "title": "Cell Structure & Function",
+        "title2": {
+          "title": "Super duper pooper",
+          "index": 2
+        },
+        "title3": {
+          "title": "Mcscooper derper dooper",
+          "index": 3
+        },
         "paragraphs": [
           {
             "content": ""
@@ -36,6 +44,24 @@
               {
                 "href": "https://docs.google.com/presentation/d/1ZFqZ-fr022ra06j75ovZkPl5cTRSi-weHumBNe5vsEg/edit?usp=sharing",
                 "title": "Types of Cells (Eukaryotic & Prokaryotic Cells)"
+              }
+            ]
+          },
+          {
+            "class": "fa-laptop",
+            "links": [
+              {
+                "href": "https://www.blendspace.com/lessons/KGJgUfb2GerqRg/exploring-narratives",
+                "title": "Exploring Narratives"
+              }
+            ]
+          },
+          {
+            "class": "fa-laptop",
+            "links": [
+              {
+                "href": "https://www.blendspace.com/lessons/hSpqd-kPGyD7PQ/ratios-rates-unit-rates",
+                "title": "Ratios, Rates, & Unit Rates"
               }
             ]
           }
@@ -77,12 +103,12 @@
   {
     "notes": [
       {
-        "notesLinkTitle": "More to come",
+        "notesLinkTitle": "Presentations",
         "subject": "",
         "unit": "",
         "number": "",
         "img": "",
-        "title": "More to come!",
+        "title": "Cell Structure & Function",
         "paragraphs": [
           {
             "content": ""
@@ -97,11 +123,11 @@
         ],
         "icons": [
           {
-            "class": "mars-double",
+            "class": "fa-laptop",
             "links": [
               {
-                "href": "http://yahoo.com",
-                "title": "More to come"
+                "href": "https://docs.google.com/presentation/d/1ItkWnZIrSuEbEzSoihhn_59fXWGRvCveE1HMN4X3XOw/edit?usp=sharing",
+                "title": "Cell Transport"
               }
             ]
           }

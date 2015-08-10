@@ -9,12 +9,12 @@
         "img": "",
         "title": "Cell Structure & Function",
         "title2": {
-          "title": "Super duper pooper",
-          "index": 2
+          "title": "Exploring Realistic Fiction",
+          "index": 3
         },
         "title3": {
-          "title": "Mcscooper derper dooper",
-          "index": 3
+          "title": "Ratios & Proportional Relationships",
+          "index": 4
         },
         "paragraphs": [
           {
@@ -52,7 +52,7 @@
             "links": [
               {
                 "href": "https://www.blendspace.com/lessons/KGJgUfb2GerqRg/exploring-narratives",
-                "title": "Exploring Narratives"
+                "title": "Starting with Narratives"
               }
             ]
           },
@@ -68,7 +68,7 @@
         ]
       },
       {
-        "notesLinkTitle": "More to come",
+        "notesLinkTitle": "Videos & Resources",
         "subject": "Science",
         "unit": "1",
         "number": "1",
@@ -88,7 +88,56 @@
         ],
         "icons": [
           {
-            "class": "",
+            "class": "fa-youtube-play",
+            "links": [
+              {
+                "href": "https://www.youtube.com/watch?v=4OpBylwH9DU",
+                "title": "The Wacky History of Cell Theory"
+              }
+            ]
+          },
+          {
+            "class": "fa-youtube-play",
+            "links": [
+              {
+                "href": "https://www.youtube.com/watch?v=URUJD5NEXC8",
+                "title": "Cell Structure Overview"
+              }
+            ]
+          },
+          {
+            "class": "fa-link",
+            "links": [
+              {
+                "href": "http://www.biology4kids.com/files/cell_main.html",
+                "title": "Organelle Overview"
+              }
+            ]
+          }
+        ]
+      },
+            {
+        "notesLinkTitle": "Hanouts",
+        "subject": "Science",
+        "unit": "1",
+        "number": "1",
+        "img": "",
+        "title": "",
+        "paragraphs": [
+          {
+            "content": ""
+          },
+          {
+            "content": ""
+          },
+          {
+            "content": ""
+          }
+
+        ],
+        "icons": [
+          {
+            "class": "fa-file-text",
             "links": [
               {
                 "href": "",
@@ -123,11 +172,11 @@
         ],
         "icons": [
           {
-            "class": "fa-laptop",
+            "class": "",
             "links": [
               {
-                "href": "https://docs.google.com/presentation/d/1ItkWnZIrSuEbEzSoihhn_59fXWGRvCveE1HMN4X3XOw/edit?usp=sharing",
-                "title": "Cell Transport"
+                "href": "",
+                "title": ""
               }
             ]
           }

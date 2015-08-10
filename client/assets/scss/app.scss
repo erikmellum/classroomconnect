@@ -646,6 +646,9 @@ div.quiz-tab{
 .quiz-link-text:hover{
   color: $zurb-orange;
 }
+.quiz-link-text:focus{
+  text-decoration: none;
+}
 .quiz-link-text{
   font-size: 220%;
   font-family: 'Amatic SC', cursive;
@@ -661,7 +664,7 @@ div.quiz-tab{
   transition-duration: .5s;
 
 }
-.quizContentWelcome a:hover, a:focus{
+.quizContentWelcome a:hover{
   transform: scale(1.1);
   font-size: 103%;
   color: $zurb-orange;

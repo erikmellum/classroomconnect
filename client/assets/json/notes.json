@@ -117,7 +117,7 @@
         ]
       },
             {
-        "notesLinkTitle": "Hanouts",
+        "notesLinkTitle": "Handouts",
         "subject": "Science",
         "unit": "1",
         "number": "1",
@@ -137,7 +137,7 @@
         ],
         "icons": [
           {
-            "class": "fa-file-text",
+            "class": "",
             "links": [
               {
                 "href": "",

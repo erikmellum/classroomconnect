@@ -581,7 +581,7 @@ div.quiz-tab{
   border:solid;
   border-radius: 5px;
   border-color: $kmellum-blue;
-  height: 50rem;
+  height: 75rem;
   width: 104%;
   overflow: auto;
   text-align: left;
@@ -593,6 +593,7 @@ div.quiz-tab{
   border:solid;
   border-radius: 5px;
   border-color: $kmellum-blue;
+  padding-top: 3rem;
   font-family: 'Shadows Into Light', cursive;
   margin-left: -1.5rem;
   margin-top: -1.5rem;
@@ -650,6 +651,7 @@ div.quiz-tab{
   text-decoration: none;
 }
 .quiz-link-text{
+
   font-size: 220%;
   font-family: 'Amatic SC', cursive;
   transition-property: color;
@@ -858,7 +860,7 @@ li.notes-item{
 }
 .notes-link-title{
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 200%;
   background: #417597;
   opacity: .90;
   width: 80%;

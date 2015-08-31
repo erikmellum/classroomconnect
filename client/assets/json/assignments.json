@@ -17,7 +17,7 @@
   {
     "title": "Plant & Animal Cell Foldable", 
     "active": true,
-    "dueDate": "Due: 09/2/15", 
+    "dueDate": "Due: 09/4/15", 
       "contents": [
       "Discover the similartities and differences between animal and plant cells. You will label and define various organelles that can be found inside a plant and animal cells using the foldable template (although, if you prefer, you may freehand the drawing of the cell).",
       "Click on the arrows above to view assignment details.",
@@ -30,14 +30,16 @@
       ]
   },
   {
-    "title": "Solving for X", 
-    "active": false,
-    "dueDate": "07/31/15", 
+    "title": "Unit Rate Check-In", 
+    "active": true,
+    "dueDate": "Due: 9/2/15", 
     "contents": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."
+      "You will solve four unit rate problems. You must include the units to receive full credit (e.g., miles/hour or words/minute). You must show your work. Please circle or box your final answer.",
+      "Click on the arrows above to view assignment details"
     ],
+    "location": "https://docs.google.com/document/d/1IDADDzKQwcHZopwzfN5XhYf0fvF6RW67-T0fSgkMgDM/edit?usp=sharing",
     "subjects": [
-          "science"
+          "math"
       ]
   }, 
   {
@@ -47,7 +49,8 @@
     "contents": [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."
     ],
-    "subjects": [
+     "location": "",
+      "subjects": [
           "science"
       ]
   }
